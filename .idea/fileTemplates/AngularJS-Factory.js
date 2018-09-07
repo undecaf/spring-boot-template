@@ -6,17 +6,21 @@ app.factory("${FACTORY}", function() {
 
     function ${FACTORY}(template, modifier) {
     
-        // Properties und ihre Defaultwerte
+        // Schreibgeschützte Properties und ihre Defaultwerte
         let properties = {
         };
 
         Object.assign(this, properties, template, modifier);
 
+        // Properties schreibschützen
         Object.keys(properties).forEach(k => Object.defineProperty(this, k, { writable: false }));
         
         // Liefert eine neue Instanz dieses Objekts mit den angegebenen Änderungen
         this.variante = modifier => new ${FACTORY}(this, modifier);
     }
+
+    // Pfad im REST-API, unter dem diese Objekte zu finden sind
+    ${FACTORY}.path = "${NAME}";
 
     return ${FACTORY};
 });
