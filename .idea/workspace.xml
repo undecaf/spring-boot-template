@@ -6,7 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09e9b735-16ac-4ca8-918b-e4fd1f6d6c3c" name="Default" comment="Autoconfig -&gt; v1.0.1." />
+    <list default="true" id="09e9b735-16ac-4ca8-918b-e4fd1f6d6c3c" name="Default" comment="UI-Router -&gt; v1.0.20.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="target/" />
     <ignored path=".mvn/" />
     <ignored path="db/" />
@@ -127,8 +129,8 @@
     <session id="586595327">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="41" />
-          <entry key="project.open.time.0" value="8" />
+          <entry key="project.closed" value="42" />
+          <entry key="project.open.time.0" value="9" />
           <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.14" value="2" />
@@ -142,13 +144,14 @@
           <entry key="project.open.time.7" value="4" />
           <entry key="project.open.time.8" value="3" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="40" />
+          <entry key="project.opened" value="41" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="html" value="2" />
           <entry key="java" value="11" />
+          <entry key="js" value="1" />
           <entry key="md" value="1" />
           <entry key="name" value="1" />
           <entry key="properties" value="4" />
@@ -160,6 +163,7 @@
         <counts>
           <entry key="HTML" value="2" />
           <entry key="JAVA" value="11" />
+          <entry key="JavaScript" value="1" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Properties" value="4" />
@@ -173,7 +177,7 @@
           <entry key="md" value="833" />
           <entry key="properties" value="1" />
           <entry key="sql" value="1" />
-          <entry key="txt" value="285" />
+          <entry key="txt" value="306" />
           <entry key="xml" value="108" />
         </counts>
       </usages-collector>
@@ -181,7 +185,7 @@
         <counts>
           <entry key="JAVA" value="13" />
           <entry key="Markdown" value="833" />
-          <entry key="PLAIN_TEXT" value="285" />
+          <entry key="PLAIN_TEXT" value="306" />
           <entry key="Properties" value="1" />
           <entry key="SQL" value="1" />
           <entry key="XML" value="108" />
@@ -208,17 +212,7 @@
     <favorites_list name="Spring Boot-Projektvorlage" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -286,6 +280,7 @@
         <option value="$PROJECT_DIR$/src/test/java/server/MainTests.java" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/public/vendor/angular-ui-router-1.0.20/angular-ui-router.min.js" />
       </list>
     </option>
   </component>
@@ -333,6 +328,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -350,12 +347,16 @@
               <item name="spring-boot-vorlage" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Spring Boot-Projektvorlage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-vorlage" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -1278,7 +1279,7 @@
   <component name="ToolWindowManager">
     <frame x="-5" y="29" width="1930" height="1029" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49943504" visible="true" weight="0.18423855" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49943504" visible="true" weight="0.185836" />
       <window_info id="Structure" order="1" sideWeight="0.500565" side_tool="true" weight="0.2827476" />
       <window_info id="Web" order="2" show_stripe_button="false" sideWeight="0.500565" side_tool="true" weight="0.2827476" />
       <window_info id="Favorites" order="3" sideWeight="0.500565" side_tool="true" weight="0.2827476" />
@@ -1288,7 +1289,7 @@
       <window_info id="Image Layers" order="7" />
       <window_info anchor="bottom" id="Database Console" order="0" weight="0.32881355" />
       <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" weight="0.329235" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.32881355" />
       <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49946752" weight="0.3169399" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.39887005" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
@@ -1299,7 +1300,7 @@
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32786885" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5007278" side_tool="true" weight="0.31487343" />
       <window_info anchor="bottom" id="Terminal" order="12" weight="0.329235" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="13" sideWeight="0.4992722" visible="true" weight="0.30960453" />
+      <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.4992722" visible="true" weight="0.30960453" />
       <window_info anchor="bottom" id="Java Enterprise" order="14" show_stripe_button="false" weight="0.3299435" />
       <window_info anchor="bottom" id="REST Client" order="15" weight="0.4124294" />
       <window_info anchor="bottom" id="Database Changes" order="16" weight="0.329235" />
@@ -1368,7 +1369,8 @@
     <MESSAGE value="Autoconfig 1.0.0 verwendet." />
     <MESSAGE value="Ausführliche README-Datei erstellt." />
     <MESSAGE value="Autoconfig -&gt; v1.0.1." />
-    <option name="LAST_COMMIT_MESSAGE" value="Autoconfig -&gt; v1.0.1." />
+    <MESSAGE value="UI-Router -&gt; v1.0.20." />
+    <option name="LAST_COMMIT_MESSAGE" value="UI-Router -&gt; v1.0.20." />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -1472,6 +1474,9 @@
           <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/vendor/angular-ui-router-1.0.20/angular-ui-router.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
