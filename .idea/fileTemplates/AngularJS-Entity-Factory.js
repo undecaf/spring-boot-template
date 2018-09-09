@@ -8,6 +8,7 @@ app.factory("${FACTORY}", function() {
     
         // Schreibgeschützte Properties und ihre Defaultwerte
         let properties = {
+            _links: undefined,
         };
 
         Object.assign(this, properties, template, modifier);
@@ -17,7 +18,20 @@ app.factory("${FACTORY}", function() {
         
         // Liefert eine neue Instanz dieses Objekts mit den angegebenen Änderungen
         this.variante = modifier => new ${FACTORY}(this, modifier);
+
+        // Liefert true, wenn dieses und das andere Objekt vom selben Konstruktor stammen
+        // und die gleichen self-Links besitzen.
+        this.equals = other => {
+            try {
+                return (this.constructor === other.constructor) && (this._links.self.href === other._links.self.href);
+            } catch (err) {
+                return false;
+            }
+        };
     }
+
+    // Pfad im REST-API, unter dem diese Objekte zu finden sind
+    ${FACTORY}.path = "${NAME}";
 
     return ${FACTORY};
 });

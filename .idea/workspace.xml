@@ -6,7 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09e9b735-16ac-4ca8-918b-e4fd1f6d6c3c" name="Default" comment="UI-Router -&gt; v1.0.20.">
+    <list default="true" id="09e9b735-16ac-4ca8-918b-e4fd1f6d6c3c" name="Default" comment="Irreführende Fehlermeldungen von UI-Router unterdrücken.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="target/" />
@@ -129,9 +129,9 @@
     <session id="586595327">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="42" />
-          <entry key="project.open.time.0" value="9" />
-          <entry key="project.open.time.1" value="3" />
+          <entry key="project.closed" value="43" />
+          <entry key="project.open.time.0" value="10" />
+          <entry key="project.open.time.1" value="4" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.14" value="2" />
           <entry key="project.open.time.17" value="1" />
@@ -144,14 +144,14 @@
           <entry key="project.open.time.7" value="4" />
           <entry key="project.open.time.8" value="3" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="41" />
+          <entry key="project.opened" value="43" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="html" value="2" />
           <entry key="java" value="11" />
-          <entry key="js" value="1" />
+          <entry key="js" value="2" />
           <entry key="md" value="1" />
           <entry key="name" value="1" />
           <entry key="properties" value="4" />
@@ -163,7 +163,7 @@
         <counts>
           <entry key="HTML" value="2" />
           <entry key="JAVA" value="11" />
-          <entry key="JavaScript" value="1" />
+          <entry key="JavaScript" value="2" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Properties" value="4" />
@@ -177,7 +177,7 @@
           <entry key="md" value="833" />
           <entry key="properties" value="1" />
           <entry key="sql" value="1" />
-          <entry key="txt" value="306" />
+          <entry key="txt" value="374" />
           <entry key="xml" value="108" />
         </counts>
       </usages-collector>
@@ -185,7 +185,7 @@
         <counts>
           <entry key="JAVA" value="13" />
           <entry key="Markdown" value="833" />
-          <entry key="PLAIN_TEXT" value="306" />
+          <entry key="PLAIN_TEXT" value="374" />
           <entry key="Properties" value="1" />
           <entry key="SQL" value="1" />
           <entry key="XML" value="108" />
@@ -212,7 +212,7 @@
     <favorites_list name="Spring Boot-Projektvorlage" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -281,6 +281,7 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/public/vendor/angular-ui-router-1.0.20/angular-ui-router.min.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/public/app.js" />
       </list>
     </option>
   </component>
@@ -328,7 +329,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -357,6 +357,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -390,7 +391,7 @@
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.27701148" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -1279,7 +1280,7 @@
   <component name="ToolWindowManager">
     <frame x="-5" y="29" width="1930" height="1029" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49943504" visible="true" weight="0.185836" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49943504" visible="true" weight="0.18903089" />
       <window_info id="Structure" order="1" sideWeight="0.500565" side_tool="true" weight="0.2827476" />
       <window_info id="Web" order="2" show_stripe_button="false" sideWeight="0.500565" side_tool="true" weight="0.2827476" />
       <window_info id="Favorites" order="3" sideWeight="0.500565" side_tool="true" weight="0.2827476" />
@@ -1300,7 +1301,7 @@
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32786885" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5007278" side_tool="true" weight="0.31487343" />
       <window_info anchor="bottom" id="Terminal" order="12" weight="0.329235" />
-      <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.4992722" visible="true" weight="0.30960453" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="13" sideWeight="0.4992722" visible="true" weight="0.30960453" />
       <window_info anchor="bottom" id="Java Enterprise" order="14" show_stripe_button="false" weight="0.3299435" />
       <window_info anchor="bottom" id="REST Client" order="15" weight="0.4124294" />
       <window_info anchor="bottom" id="Database Changes" order="16" weight="0.329235" />
@@ -1370,7 +1371,8 @@
     <MESSAGE value="Ausführliche README-Datei erstellt." />
     <MESSAGE value="Autoconfig -&gt; v1.0.1." />
     <MESSAGE value="UI-Router -&gt; v1.0.20." />
-    <option name="LAST_COMMIT_MESSAGE" value="UI-Router -&gt; v1.0.20." />
+    <MESSAGE value="Irreführende Fehlermeldungen von UI-Router unterdrücken." />
+    <option name="LAST_COMMIT_MESSAGE" value="Irreführende Fehlermeldungen von UI-Router unterdrücken." />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -1477,6 +1479,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/public/vendor/angular-ui-router-1.0.20/angular-ui-router.min.js">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="533">
+          <caret line="73" selection-start-line="73" selection-end-line="73" />
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">
