@@ -6,7 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09e9b735-16ac-4ca8-918b-e4fd1f6d6c3c" name="Default" comment="Irreführende Fehlermeldungen von UI-Router unterdrücken.">
+    <list default="true" id="09e9b735-16ac-4ca8-918b-e4fd1f6d6c3c" name="Default" comment="Entity-Factory zu AngularJS-Vorlagen hinzugefügt.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="target/" />
@@ -129,7 +129,7 @@
     <session id="586595327">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="43" />
+          <entry key="project.closed" value="44" />
           <entry key="project.open.time.0" value="10" />
           <entry key="project.open.time.1" value="4" />
           <entry key="project.open.time.11" value="1" />
@@ -177,7 +177,7 @@
           <entry key="md" value="833" />
           <entry key="properties" value="1" />
           <entry key="sql" value="1" />
-          <entry key="txt" value="374" />
+          <entry key="txt" value="424" />
           <entry key="xml" value="108" />
         </counts>
       </usages-collector>
@@ -185,7 +185,7 @@
         <counts>
           <entry key="JAVA" value="13" />
           <entry key="Markdown" value="833" />
-          <entry key="PLAIN_TEXT" value="374" />
+          <entry key="PLAIN_TEXT" value="424" />
           <entry key="Properties" value="1" />
           <entry key="SQL" value="1" />
           <entry key="XML" value="108" />
@@ -1372,7 +1372,8 @@
     <MESSAGE value="Autoconfig -&gt; v1.0.1." />
     <MESSAGE value="UI-Router -&gt; v1.0.20." />
     <MESSAGE value="Irreführende Fehlermeldungen von UI-Router unterdrücken." />
-    <option name="LAST_COMMIT_MESSAGE" value="Irreführende Fehlermeldungen von UI-Router unterdrücken." />
+    <MESSAGE value="Entity-Factory zu AngularJS-Vorlagen hinzugefügt." />
+    <option name="LAST_COMMIT_MESSAGE" value="Entity-Factory zu AngularJS-Vorlagen hinzugefügt." />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
