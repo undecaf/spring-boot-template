@@ -1,20 +1,36 @@
 "use strict";
 
+/**
+ * Repräsentiert eine "page" von Entities, wie sie vom REST-API
+ * geliefert wird.
+ */
 app.factory("Seite", function () {
 
-    function Seite(konstruktor, data) {
+    function Seite(konstruktor, data, modifier) {
 
         // Schreibgeschützte Properties und ihre Defaultwerte
         let properties = {
             page: {},
             entities: [],
+
+            vorige: undefined,
+            naechste: undefined,
+            erste: undefined,
+            letzte: undefined,
+            istErste: undefined,
+            istLetzte: undefined,
         };
 
-        Object.assign(this, properties, data, { _embedded: undefined });
+        // Daten den Properties zuweisen
+        Object.assign(this, properties, data, modifier);
 
-        // Objekte in den gewünschten Datentyp umwandeln
-        this.entities = data._embedded[konstruktor.path]
+        // Anonyme Objekte in Entities umwandeln
+        this.entities = data[konstruktor.path]
             .map(obj => new konstruktor(obj));
+
+        // Unerwünschte Properties entfernen
+        delete this._embedded;
+        delete this[konstruktor.path];
 
         // Hilfsvariable erzeugen
         this.vorige = this.page.number - 1;
@@ -27,6 +43,9 @@ app.factory("Seite", function () {
 
         // Properties schreibschützen
         Object.keys(properties).forEach(k => Object.defineProperty(this, k, {writable: false}));
+
+        // Liefert eine neue Instanz dieses Objekts mit den angegebenen Änderungen
+        this.variante = modifier => new Seite(this, modifier);
     }
 
     return Seite;
