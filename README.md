@@ -14,4 +14,5 @@ initialisiert
 ## AngularJS
 + Clientseitige Verzeichnisstruktur für Komponenten, Services, Factories und Filter
 + AngularJS, UI-Router, Angular Material mit Icons und Fonts und Moment.js lokal verfügbar
++ Vordefinierte Komponenten, Services und Factories
 + AngularJS-Musterprojekt, das einen Hinweistext ausliefert

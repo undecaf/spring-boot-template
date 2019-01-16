@@ -1,7 +1,7 @@
 "use strict";
 
 /**
- * Basisklasse für Factories von HATEOAS-Ressourcen.
+ * Optionale Basisklasse für Entity-Factories.
  */
 app.factory("Persistent", function () {
 
