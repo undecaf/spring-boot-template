@@ -1,24 +1,39 @@
 "use strict";
 
+/**
+ * Erlaubt CRUD-Operationen auf Entities des Servers über dessen REST-API.
+ */
 app.service("RestService", function ($mdToast, $http, $log, Seite) {
 
     $log.debug("RestService()");
 
-    const API_PFAD = "http://localhost:8080/api/"
+    const API_PFAD = "api/";
 
 
     /**
      * Liefert ein Promise auf eine Seite von Entities der
      * angegebenen Type. Existiert die Seite nicht, so wird
      * die letzte vorhandene Seite geliefert.
+     *
+     * Alle _embedded-Objekte werden durch ihre Inhalte ersetzt.
+     *
+     * Argumente (optional, wenn nicht anders angegeben):
+     *   konstruktor   (erforderlich) Factoryfunktion für geladene
+     *                 Objekte, liefert auch ihren Pfad im REST-API
+     *   seitenNr      (erforderlich) Nummer der zu ladenden Seite
+     *                 (erste Seite === 0)
+     *   parameter     Namen und Werte der Request-Parameter als
+     *                 Objekt
      */
-    this.seiteLaden = (konstruktor, page, size) => {
-        $log.debug("RestService.seiteLaden()", konstruktor.name, page, size);
+    this.seiteLaden = (konstruktor, seitenNr, parameter) => {
+        $log.debug(`RestService.seiteLaden("${konstruktor.path}", ${seitenNr}, ${parameter})`);
+
+        // REST-Pfad und Query-Parameter vorbereiten
+        let pfad = `${API_PFAD}${konstruktor.path}`,
+            params = angular.extend({ page: seitenNr }, parameter);
 
         return $http
-            .get(`${API_PFAD}${konstruktor.path}`,
-                { params: { page: page || 0, size: size || 10 } }
-            )
+            .get(pfad, { params: params })
             .then(response => {
                 $log.debug("RestService.seiteLaden() OK", response);
 
@@ -29,10 +44,7 @@ app.service("RestService", function ($mdToast, $http, $log, Seite) {
 
                 } else {
                     // Letzte vorhandene Seite ausliefern
-                    return this.seiteLaden(
-                        konstruktor,
-                        response.data.page.totalPages-1,
-                        size);
+                    return this.seiteLaden(konstruktor,response.data.page.totalPages-1, size);
                 }
             })
             .catch(fehlerBehandeln);
@@ -40,8 +52,9 @@ app.service("RestService", function ($mdToast, $http, $log, Seite) {
 
 
     /**
-     * Löscht die angegebene Entity von Server und liefert ein
-     * Promise auf den Erfolg.
+     * Löscht die angegebene Entity von Server.
+     *
+     * Liefert ein Promise auf den Erfolg.
      */
     this.loeschen = (entity) => {
         $log.debug("RestService.loeschen()", entity);
@@ -62,8 +75,10 @@ app.service("RestService", function ($mdToast, $http, $log, Seite) {
 
     /**
      * Aktualisiert oder erzeugt die angegebene Entity auf dem Server,
-     * je nachdem, ob sie bereits vom Server stammt oder nicht. Liefert
-     * ein Promise auf die gespeicherte Entity.
+     * je nachdem, ob sie bereits vom Server stammt oder lokal erzeugt
+     * wurde.
+     *
+     * Liefert ein Promise auf die aktuelle Version der Entity.
      */
     this.speichern = (entity) => {
         // Stammt die Entity vom Server, oder wurde sie lokal erzeugt?
@@ -111,5 +126,59 @@ app.service("RestService", function ($mdToast, $http, $log, Seite) {
         $mdToast.showSimple(`Fehler ${response.status}`);
         return Promise.reject();
     }
+
+
+    /**
+     * Ersetzt in den Response-Daten rekursiv alle _embedded-Objekte durch ihre Inhalte.
+     */
+    function embeddedAufloesen(obj) {
+        let embedded;
+
+        if (angular.isArray(obj)) {
+            // Arrayelemente umstrukturieren
+            obj.forEach(embeddedAufloesen);
+
+        } else if (angular.isObject(obj) && (embedded = obj._embedded)) {
+            // Inhalte von _embedded in diesem Objekt platzieren
+            Object.keys(embedded).forEach(k => {
+                obj[k] = embedded[k];
+                embeddedAufloesen(obj[k]);
+            })
+            delete obj._embedded;
+        }
+
+        return obj;
+    }
+
+
+    /**
+     * Ersetzt in den Request-Daten alle Entity-Objekte durch ihre self-Links.
+     */
+    function entitiesVerlinken(obj) {
+        if (angular.isArray(obj)) {
+            // In Arrayelementen ersetzen
+            obj.forEach(entitiesVerlinken);
+
+        } else if (angular.isObject(obj)) {
+            // Verlinkte Objekte suchen und durch ihre self-Links ersetzen
+            Object.keys(obj).forEach(k => {
+                if (obj[k] && obj[k]._links && obj[k]._links.self) {
+                    // Templates aus Link entfernen
+                    obj[k] = obj[k]._links.self.href.replace(/\{.*\}$/, "");
+                }
+            });
+        }
+
+        return obj;
+    }
+
+
+    // embeddedAufloesen() automatisch zuallererst auf jede Response anwenden
+    $http.defaults.transformResponse.push(embeddedAufloesen);
+
+    // entitiesVerlinken() automatisch unmittelbar vor dem Absenden auf jeden Request anwenden
+    $http.defaults.transformRequest.unshift(requestData => {
+        return entitiesVerlinken(angular.copy(requestData));
+    });
 
 });
