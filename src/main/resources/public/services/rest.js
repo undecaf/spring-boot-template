@@ -173,10 +173,12 @@ app.service("RestService", function ($mdToast, $http, $log, Seite) {
     }
 
 
-    // embeddedAufloesen() automatisch zuallererst auf jede Response anwenden
+    // embeddedAufloesen() automatisch auf jede Response anwenden, _nachdem_
+    // AngularJS sie von einem JSON-String in ein Objekt umgewandelt hat
     $http.defaults.transformResponse.push(embeddedAufloesen);
 
-    // entitiesVerlinken() automatisch unmittelbar vor dem Absenden auf jeden Request anwenden
+    // entitiesVerlinken() vor dem Absenden automatisch auf jeden Request anwenden,
+    // _bevor_ AngularJS ihn in einen JSON-String umwandelt
     $http.defaults.transformRequest.unshift(requestData => {
         return entitiesVerlinken(angular.copy(requestData));
     });
