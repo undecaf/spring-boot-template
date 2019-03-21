@@ -62,7 +62,7 @@ app.service("RestService", function ($mdToast, $http, $log, Seite) {
         // Stammt die Entity vom Server, oder wurde sie lokal erzeugt?
         if (entity._links && entity._links.self) {
             return $http
-                .delete(entity._links.self.href)
+                .delete(entity._links.self.href, { headers: { "If-Match": entity.etag } })
                 .catch(fehlerBehandeln);
 
         } else {
