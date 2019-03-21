@@ -6,7 +6,7 @@
  */
 app.factory("Seite", function () {
 
-    function Seite(konstruktor, data, modifier) {
+    function Seite(konstruktor, data) {
 
         // Schreibgeschützte Properties und ihre Defaultwerte
         let properties = {
@@ -22,7 +22,7 @@ app.factory("Seite", function () {
         };
 
         // Daten den Properties zuweisen
-        Object.assign(this, properties, data, modifier);
+        Object.assign(this, properties, data);
 
         // Anonyme Objekte in Entities umwandeln
         this.entities = data[konstruktor.path]
@@ -43,9 +43,6 @@ app.factory("Seite", function () {
 
         // Properties schreibschützen
         Object.keys(properties).forEach(k => Object.defineProperty(this, k, {writable: false}));
-
-        // Liefert eine neue Instanz dieses Objekts mit den angegebenen Änderungen
-        this.variante = modifier => new Seite(this, modifier);
     }
 
     return Seite;
