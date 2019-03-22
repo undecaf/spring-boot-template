@@ -13,14 +13,14 @@ public class Persistent {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private Long id;
 
     @Version
     private long version;
 
 
     /** Erscheint nicht im JSON-API, obwohl dies eine get-Methode ist. */
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
