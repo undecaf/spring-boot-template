@@ -6,11 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09e9b735-16ac-4ca8-918b-e4fd1f6d6c3c" name="Default" comment="Fix: Priorisierung von Properties =&gt; application.properties nach resources/config verlegt.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/application.properties" afterDir="false" />
-    </list>
+    <list default="true" id="09e9b735-16ac-4ca8-918b-e4fd1f6d6c3c" name="Default" comment="Fix: AuthService laden." />
     <ignored path="target/" />
     <ignored path=".mvn/" />
     <ignored path="db/" />
@@ -75,17 +71,7 @@
     <favorites_list name="Spring Boot-Projektvorlage" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -159,11 +145,11 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/resources/public/services/rest.js" />
         <option value="$PROJECT_DIR$/src/main/resources/public/models/seite.js" />
-        <option value="$PROJECT_DIR$/src/main/resources/public/index.html" />
         <option value="$PROJECT_DIR$/src/main/resources/public/app.js" />
         <option value="$PROJECT_DIR$/src/main/resources/public/services/auth.js" />
         <option value="$PROJECT_DIR$/src/main/java/server/models/Persistent.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/public/index.html" />
       </list>
     </option>
   </component>
@@ -281,6 +267,14 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Spring Boot-Projektvorlage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-vorlage" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -1300,7 +1294,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Autoconfig -&gt; v1.0.1." />
     <MESSAGE value="UI-Router -&gt; v1.0.20." />
     <MESSAGE value="Irreführende Fehlermeldungen von UI-Router unterdrücken." />
     <MESSAGE value="Entity-Factory zu AngularJS-Vorlagen hinzugefügt." />
@@ -1325,7 +1318,8 @@
     <MESSAGE value="Client: Authentifizierungs-Service hinzugefügt." />
     <MESSAGE value="Server: OAuth2-Support durch neue Autoconfig, Version -&gt; &quot;2.0.0-RELEASE&quot;." />
     <MESSAGE value="Fix: Priorisierung von Properties =&gt; application.properties nach resources/config verlegt." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix: Priorisierung von Properties =&gt; application.properties nach resources/config verlegt." />
+    <MESSAGE value="Fix: AuthService laden." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix: AuthService laden." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
@@ -1456,13 +1450,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/public/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -1509,6 +1496,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
         </state>
       </provider>
     </entry>
