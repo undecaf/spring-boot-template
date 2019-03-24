@@ -6,7 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09e9b735-16ac-4ca8-918b-e4fd1f6d6c3c" name="Default" comment="Einbinden von Benutzern als Entity vereinfacht; HATEOAS auf /api/me; Version -&gt; &quot;2.1.0-RELEASE&quot;.">
+    <list default="true" id="09e9b735-16ac-4ca8-918b-e4fd1f6d6c3c" name="Default" comment="Autoconfig-Update.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="target/" />
@@ -73,17 +73,7 @@
     <favorites_list name="Spring Boot-Projektvorlage" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/public/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -221,6 +211,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -228,79 +220,10 @@
               <item name="Spring Boot-Projektvorlage" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-boot-vorlage" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Spring Boot-Projektvorlage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-vorlage" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Spring Boot-Projektvorlage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-vorlage" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Spring Boot-Projektvorlage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-vorlage" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Spring Boot-Projektvorlage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-vorlage" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Spring Boot-Projektvorlage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-vorlage" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Spring Boot-Projektvorlage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-vorlage" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="repositories" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Spring Boot-Projektvorlage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-vorlage" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Spring Boot-Projektvorlage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-vorlage" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Spring Boot-Projektvorlage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-vorlage" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -326,7 +249,7 @@
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533720651881" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="H2" />
     <property name="database.console.LAST_STATE" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../../ITP/4. Jg/2018-2019/4BI/ITP-Parship/versuch" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="/usr/bin/node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="options.lastSelected" value="reference.settings.project.maven.runner" />
@@ -1230,7 +1153,7 @@
   <component name="ToolWindowManager">
     <frame x="-5" y="29" width="1930" height="1027" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49943504" visible="true" weight="0.23162939" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49943504" visible="true" weight="0.23375931" />
       <window_info id="Structure" order="1" sideWeight="0.500565" side_tool="true" weight="0.2827476" />
       <window_info id="Web" order="2" show_stripe_button="false" sideWeight="0.500565" side_tool="true" weight="0.2827476" />
       <window_info id="Favorites" order="3" sideWeight="0.500565" side_tool="true" weight="0.2827476" />
@@ -1315,7 +1238,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Irreführende Fehlermeldungen von UI-Router unterdrücken." />
     <MESSAGE value="Entity-Factory zu AngularJS-Vorlagen hinzugefügt." />
     <MESSAGE value="Fix: SpelAwareProxyProjectionFactory für Java &gt; 8." />
     <MESSAGE value="Basisklasse für Factories von HATEOAS-Ressourcen hinzugefügt." />
@@ -1340,7 +1262,8 @@
     <MESSAGE value="Fix: Priorisierung von Properties =&gt; application.properties nach resources/config verlegt." />
     <MESSAGE value="Fix: AuthService laden." />
     <MESSAGE value="Einbinden von Benutzern als Entity vereinfacht; HATEOAS auf /api/me; Version -&gt; &quot;2.1.0-RELEASE&quot;." />
-    <option name="LAST_COMMIT_MESSAGE" value="Einbinden von Benutzern als Entity vereinfacht; HATEOAS auf /api/me; Version -&gt; &quot;2.1.0-RELEASE&quot;." />
+    <MESSAGE value="Autoconfig-Update." />
+    <option name="LAST_COMMIT_MESSAGE" value="Autoconfig-Update." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
@@ -1513,17 +1436,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
+        <state relative-caret-position="-180" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="20" lean-forward="true" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
         </state>
       </provider>
     </entry>
