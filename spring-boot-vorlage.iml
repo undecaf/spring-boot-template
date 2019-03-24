@@ -27,7 +27,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="Maven: at.rennweg.htl:autoconfig:2.1.2-RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: at.rennweg.htl:autoconfig:2.2.0-RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-web:2.0.8.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter:2.0.8.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot:2.0.8.RELEASE" level="project" />
@@ -143,6 +143,10 @@
     <orderEntry type="library" name="Maven: org.jboss.logging:jboss-logging:3.3.2.Final" level="project" />
     <orderEntry type="library" name="Maven: net.sf.ehcache:ehcache:2.10.6" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: com.h2database:h2:1.4.197" level="project" />
+    <orderEntry type="library" name="Maven: org.postgresql:postgresql:42.2.5" level="project" />
+    <orderEntry type="library" name="Maven: com.microsoft.sqlserver:sqljdbc4:4.0" level="project" />
+    <orderEntry type="library" name="Maven: org.mariadb.jdbc:mariadb-java-client:2.2.6" level="project" />
+    <orderEntry type="library" name="Maven: mysql:mysql-connector-java:5.1.47" level="project" />
     <orderEntry type="library" name="Maven: cz.jirutka.validator:validator-collection:2.2.0" level="project" />
     <orderEntry type="library" name="Maven: javax.inject:javax.inject:1" level="project" />
     <orderEntry type="library" name="Maven: org.hibernate:hibernate-validator:5.4.1.Final" level="project" />
