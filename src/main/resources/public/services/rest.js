@@ -10,18 +10,6 @@ app.service("RestService", function ($mdToast, $http, $log, Seite) {
     const API_PFAD = "api/";
 
 
-"use strict";
-
-/**
- * Erlaubt CRUD-Operationen auf Entities des Servers über dessen REST-API.
- */
-app.service("RestService", function ($mdToast, $http, $log, Seite) {
-
-    $log.debug("RestService()");
-
-    const API_PFAD = "api/";
-
-
     /**
      * Liefert ein Promise auf eine Seite von Entities der
      * angegebenen Type. Existiert die Seite nicht, so wird
