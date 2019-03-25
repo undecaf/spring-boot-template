@@ -11,11 +11,12 @@ app.service("RestService", function ($mdToast, $http, $log, Seite) {
 
 
     /**
-     * Liefert ein Promise auf eine Seite von Entities der
-     * angegebenen Type. Existiert die Seite nicht, so wird
-     * die letzte vorhandene Seite geliefert.
-     *
-     * Alle _embedded-Objekte werden durch ihre Inhalte ersetzt.
+     * Lädt über das REST-API vom Server eine Seite derjenigen
+     * Ressourcen, die der Konstruktor angibt, und liefert ein
+     * Promise auf die geladene Seite.
+     * Gibt es auf der gewünschten Seite keine Datensätze, so
+     * wird die letzte Seite ausgeliefert, auf der noch Datensätze
+     * vorhanden sind.
      *
      * Argumente (optional, wenn nicht anders angegeben):
      *   konstruktor   (erforderlich) Factoryfunktion für geladene
@@ -24,28 +25,70 @@ app.service("RestService", function ($mdToast, $http, $log, Seite) {
      *                 (erste Seite === 0)
      *   parameter     Namen und Werte der Request-Parameter als
      *                 Objekt
+     *   query         Name der serverseitigen Query-Methode, falls
+     *                 eine solche verwendet werden soll
      */
-    this.seiteLaden = (konstruktor, seitenNr, parameter) => {
-        $log.debug(`RestService.seiteLaden("${konstruktor.path}", ${seitenNr}, ${parameter})`);
+    this.seiteLaden = function(konstruktor, seitenNr, parameter, query) {
+        $log.debug(`RestService.seiteLaden("${konstruktor.path}", ${seitenNr}, ${parameter}, ${query})`);
 
         // REST-Pfad und Query-Parameter vorbereiten
-        let pfad = `${API_PFAD}${konstruktor.path}`,
-            params = angular.extend({ page: seitenNr }, parameter);
+        let pfad = query ? `${API_PFAD}${konstruktor.path}/search/${query}` : `${API_PFAD}${konstruktor.path}`,
+            params = Object.assign({}, parameter, { page: seitenNr });
 
         return $http
             .get(pfad, { params: params })
             .then(response => {
                 $log.debug("RestService.seiteLaden() OK", response);
 
-                // Seitennummer im zulässigen Bereich, oder keine Seiten?
-                if (response.data.page.number < response.data.page.totalPages || !response.data.page.totalElements) {
-                    // OK, Seite erzeugen und zurückgeben
-                    return new Seite(konstruktor, response.data);
+                // Geladene Datensätze in den richtigen Datentyp umwandeln
+                let seite = response.data,
+                    datensaetze = [];
+
+                seite._embedded[konstruktor.path].forEach(datensatz => {
+                    datensaetze.push(new konstruktor(datensatz));
+                });
+
+                seite[konstruktor.path] = datensaetze;
+                delete seite._embedded;
+
+                // Wurde die gewünschte Seite geladen?
+                if ((seitenNr < seite.page.totalPages) || (seite.page.totalPages === 0)) {
+                    // Ja, oder es wurden überhaupt keine Datensätze gefunden
+                    return seite;
 
                 } else {
-                    // Letzte vorhandene Seite ausliefern
-                    return this.seiteLaden(konstruktor,response.data.page.totalPages-1, size);
+                    // Gewünschte Seite wurde nicht geladen => letzte Seite laden
+                    $log.debug("RestService.seiteLaden(): Seitennummer zu groß", params.page);
+
+                    return this.seiteLaden(konstruktor, seite.page.totalPages-1, parameter, query);
                 }
+            })
+            .catch(fehlerBehandeln);
+    };
+
+
+    /**
+     * Lädt über das REST-API vom Server eine einzelne Ressource des
+     * angegebenen Konstruktors und liefert ein Promise auf die
+     * geladene Ressource.
+     *
+     * Argumente (optional, wenn nicht anders angegeben):
+     *   konstruktor   (erforderlich) Factoryfunktion für geladene
+     *                 Objekte, liefert auch ihren Pfad im REST-API
+     *   url           (erforderlich) Link zur Ressource
+     *   parameter     Namen und Werte der Request-Parameter als
+     *                 Objekt
+     */
+    this.laden = function(konstruktor, url, parameter) {
+        $log.debug(`RestService.laden("${konstruktor.path}", ${url})`);
+
+        return $http
+            .get(url, { params: parameter })
+            .then(response => {
+                $log.debug(`RestService.laden() OK`, response);
+
+                response.data = new konstruktor(response.data);
+                return response.data;
             })
             .catch(fehlerBehandeln);
     };
