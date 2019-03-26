@@ -6,11 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09e9b735-16ac-4ca8-918b-e4fd1f6d6c3c" name="Default" comment="Client: REST-Service kann Queries abfragen und einzelne Entities laden.">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__at_rennweg_htl_autoconfig_2_2_0_RELEASE.xml" beforeDir="false" />
+    <list default="true" id="09e9b735-16ac-4ca8-918b-e4fd1f6d6c3c" name="Default" comment="Server: Auditing auch für OAuth2-Benutzer.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-vorlage.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-vorlage.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/services/rest.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/services/rest.js" afterDir="false" />
     </list>
     <ignored path="target/" />
     <ignored path=".mvn/" />
@@ -78,10 +76,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/public/services/rest.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+            <state relative-caret-position="142">
+              <caret line="179" column="15" selection-start-line="179" selection-start-column="15" selection-end-line="179" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -158,13 +156,13 @@
         <option value="$PROJECT_DIR$/src/main/resources/public/models/persistent.js" />
         <option value="$PROJECT_DIR$/src/main/resources/public/components/http-aktiv.js" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/main/resources/public/services/rest.js" />
         <option value="$PROJECT_DIR$/src/main/resources/public/models/seite.js" />
         <option value="$PROJECT_DIR$/src/main/resources/public/app.js" />
         <option value="$PROJECT_DIR$/src/main/resources/public/services/auth.js" />
         <option value="$PROJECT_DIR$/src/main/java/server/models/Persistent.java" />
         <option value="$PROJECT_DIR$/src/main/resources/public/index.html" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/public/services/rest.js" />
       </list>
     </option>
   </component>
@@ -224,7 +222,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -312,6 +309,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="AndroidView" />
     </panes>
@@ -1240,10 +1238,10 @@
     <option name="totallyTimeSpent" value="4900000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-5" y="29" width="1930" height="1027" extended-state="6" />
+    <frame x="-5" y="29" width="1610" height="847" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49943504" visible="true" weight="0.24973376" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49943504" visible="true" weight="0.25288832" />
       <window_info id="Structure" order="1" sideWeight="0.500565" side_tool="true" weight="0.2827476" />
       <window_info id="Web" order="2" show_stripe_button="false" sideWeight="0.500565" side_tool="true" weight="0.2827476" />
       <window_info id="Favorites" order="3" sideWeight="0.500565" side_tool="true" weight="0.2827476" />
@@ -1264,7 +1262,7 @@
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32786885" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5007278" side_tool="true" weight="0.31487343" />
       <window_info anchor="bottom" id="Terminal" order="12" weight="0.32881355" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="13" sideWeight="0.4992722" visible="true" weight="0.30316743" />
+      <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.4992722" visible="true" weight="0.3025568" />
       <window_info anchor="bottom" id="Java Enterprise" order="14" show_stripe_button="false" weight="0.3299435" />
       <window_info anchor="bottom" id="REST Client" order="15" weight="0.4124294" />
       <window_info anchor="bottom" id="Database Changes" order="16" weight="0.329235" />
@@ -1328,7 +1326,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Angemeldeten Benutzer unter /api/me ausliefern; Spring Boot -&gt; v2.0.5." />
     <MESSAGE value="IntelliJ: path ergänzt in AngularJS-Factory." />
     <MESSAGE value="IntelliJ: Default-SDK auf &quot;10 (Oracle)&quot; gesetzt." />
     <MESSAGE value="Client: zusätzliche Properties in Seite-Factory." />
@@ -1353,7 +1350,8 @@
     <MESSAGE value="Fix: CORS nur auf REST-API, Autoconfig-Update." />
     <MESSAGE value="Zusätzliche Treiber und Konfigurationsvorlagen für PostgreSQL, MS SQL Server, MariaDB und MySQL." />
     <MESSAGE value="Client: REST-Service kann Queries abfragen und einzelne Entities laden." />
-    <option name="LAST_COMMIT_MESSAGE" value="Client: REST-Service kann Queries abfragen und einzelne Entities laden." />
+    <MESSAGE value="Server: Auditing auch für OAuth2-Benutzer." />
+    <option name="LAST_COMMIT_MESSAGE" value="Server: Auditing auch für OAuth2-Benutzer." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
@@ -1524,17 +1522,17 @@
         <state relative-caret-position="-180" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/public/services/rest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="74" lean-forward="true" selection-start-line="74" selection-end-line="74" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/services/rest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="179" column="15" selection-start-line="179" selection-start-column="15" selection-end-line="179" selection-end-column="15" />
         </state>
       </provider>
     </entry>
