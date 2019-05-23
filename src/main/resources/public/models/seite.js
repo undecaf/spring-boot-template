@@ -33,6 +33,7 @@ app.factory("Seite", function () {
         delete this[konstruktor.path];
 
         // Hilfsvariable erzeugen
+        this.laufendeNr = Math.min(this.page.number + 1, this.page.totalPages);
         this.vorige = this.page.number - 1;
         this.naechste = this.page.number + 1;
         this.erste = 0;
