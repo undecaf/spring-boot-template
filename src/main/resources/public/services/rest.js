@@ -28,7 +28,7 @@ app.service("RestService", function ($mdToast, $http, $log, Seite) {
      *                 eine solche verwendet werden soll
      */
     this.seiteLaden = (konstruktor, seitenNr, parameter, query) => {
-        $log.debug(`RestService.seiteLaden("${konstruktor.path}", ${seitenNr}, ${parameter})`);
+        $log.debug("RestService.seiteLaden()", konstruktor.path, seitenNr, parameter, query);
 
         // REST-Pfad und Query-Parameter vorbereiten
         let pfad = query
@@ -71,7 +71,7 @@ app.service("RestService", function ($mdToast, $http, $log, Seite) {
      *                 Objekt
      */
     this.laden = (konstruktor, url, parameter) => {
-        $log.debug(`RestService.laden("${konstruktor.path}", ${url})`);
+        $log.debug("RestService.laden()", konstruktor.path, url);
 
         return $http
             .get(url, { params: parameter })
