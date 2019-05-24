@@ -1,8 +1,8 @@
 package server.models;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.Collection;
-import java.util.HashSet;
 import java.util.function.BiConsumer;
 import java.util.function.Function;
 
@@ -55,7 +55,7 @@ public class Persistent {
      *      neu zugewiesene {@link Collection} von Entities der n-Seite
      */
     protected <O extends Persistent, M extends Persistent, C extends Collection<M>>
-    C setMany(C newCollection, BiConsumer<M, O> setOne, Function<O, C> getCollection) {
+            C setOneToMany(C newCollection, BiConsumer<M, O> setOne, Function<O, C> getCollection) {
 
         C collection;
 
@@ -63,7 +63,7 @@ public class Persistent {
         if ((collection = getCollection.apply((O) this)) != null) {
             // Alle bisherigen n-Entities entfernen
             // Um ConcurrentModificationException zu verhindern:
-            new HashSet<M>(collection).forEach(e -> setOne.accept(e, null));
+            new ArrayList<M>(collection).forEach(e -> setOne.accept(e, null));
         }
 
         // Wurde eine neue Collection von n-Entities angegeben?
@@ -79,23 +79,23 @@ public class Persistent {
     /**
      * Hilfsmethode für die n-Seite einer 1:n-Beziehung, die auch die 1-Seite aktualisiert.
      *
-     * @param newOne
-     *      neu zuzuweisende Entity der 1-Seite
-     * @param getOne
-     *      get-{@linkplain Function Methode} der n-Seite für die Entity der 1-Seite
-     * @param getCollection
-     *      get-{@linkplain Function Methode} der 1-Seite für die {@link Collection} von Entities der n-Seite
      * @param <O>
      *      Datentyp der 1-Seite
      * @param <M>
      *      Datentyp der n-Seite
      * @param <C>
      *      {@link Collection} oder Subklasse
+     * @param newOne
+     *      neu zuzuweisende Entity der 1-Seite
+     * @param getCollection
+     *      get-{@linkplain Function Methode} der 1-Seite für die {@link Collection} von Entities der n-Seite
+     * @param getOne
+     *      get-{@linkplain Function Methode} der n-Seite für die Entity der 1-Seite
      * @return
      *      neu zugewiesene Entity der 1-Seite
      */
     protected <O extends Persistent, M extends Persistent, C extends Collection<M>>
-    O setOne(O newOne, Function<M, O> getOne, Function<O, C> getCollection) {
+            O setManyToOne(O newOne, Function<O, C> getCollection, Function<M, O> getOne) {
 
         O one;
         C collection;
