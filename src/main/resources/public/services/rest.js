@@ -65,18 +65,20 @@ app.service("RestService", function ($mdToast, $http, $log, Seite) {
      *
      * Argumente (optional, wenn nicht anders angegeben):
      *   konstruktor   (erforderlich) Factoryfunktion für geladene
-     *                 Objekte, liefert auch ihren Pfad im REST-API
-     *   url           (erforderlich) Link zur Entity
+     *                 Objekte
+     *   url           (erforderlich) Link zur Entity; enthält dieser
+     *                 ein Template, so wird es ignoriert
      *   parameter     Namen und Werte der Request-Parameter als
      *                 Objekt
      */
     this.laden = (konstruktor, url, parameter) => {
-        $log.debug("RestService.laden()", konstruktor.path, url);
+        $log.debug("RestService.laden()", konstruktor, url);
 
         return $http
-            .get(url, { params: parameter })
+            // Template aus dem URL entfernen
+            .get(url.replace(/\{.*\}$/, ""), { params: parameter })
             .then(response => {
-                $log.debug(`RestService.laden() OK`, response);
+                $log.debug("RestService.laden() OK", response);
 
                 response.data = new konstruktor(response.data);
                 return response.data;
@@ -189,15 +191,15 @@ app.service("RestService", function ($mdToast, $http, $log, Seite) {
      * Ersetzt in den Request-Daten alle _eingebetteten_ Entity-Objekte durch ihre self-Links.
      */
     function entitiesVerlinken(obj, rekursiv) {
-        if (obj._links && obj._links.self && rekursiv) {
+        if (obj && obj._links && obj._links.self && rekursiv) {
             // Templates aus Link entfernen und Objekt durch diesen Link ersetzen
             return obj._links.self.href.replace(/\{.*\}$/, "");
 
-        } else if (isArray(obj)) {
+        } else if (angular.isArray(obj)) {
             // Arrayelemente ersetzen, wenn nötig
             obj.forEach((e, i) => obj[i] = entitiesVerlinken(e, true));
 
-        } else if (isObject(obj)) {
+        } else if (angular.isObject(obj)) {
             // Properties ersetzen, wenn nötig
             Object.keys(obj).forEach(k => obj[k] = entitiesVerlinken(obj[k], true));
         }
