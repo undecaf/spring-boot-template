@@ -6,9 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09e9b735-16ac-4ca8-918b-e4fd1f6d6c3c" name="Default" comment="Server: Merkbarkeit der Persistent-Hilfsmethoden verbessert.">
+    <list default="true" id="09e9b735-16ac-4ca8-918b-e4fd1f6d6c3c" name="Default" comment="Server: Persistent-Hilfsmethoden optimiert für den Fall, dass keine Veränderung erfolgt.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/models/Persistent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/models/Persistent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/services/rest.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/services/rest.js" afterDir="false" />
     </list>
     <ignored path="target/" />
     <ignored path=".mvn/" />
@@ -74,11 +74,12 @@
     <favorites_list name="Spring Boot-Projektvorlage" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/server/models/Persistent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-585">
+            <state relative-caret-position="30">
+              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#663#664#0" expanded="true" />
@@ -86,6 +87,15 @@
                 <element signature="e#718#719#0" expanded="true" />
                 <element signature="e#748#749#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/public/services/rest.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="269">
+              <caret line="190" column="30" selection-start-line="190" selection-start-column="13" selection-end-line="190" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -164,11 +174,11 @@
         <option value="$PROJECT_DIR$/src/main/resources/public/app.js" />
         <option value="$PROJECT_DIR$/src/main/resources/public/services/auth.js" />
         <option value="$PROJECT_DIR$/src/main/resources/public/index.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/public/services/rest.js" />
         <option value="$PROJECT_DIR$/src/main/resources/config/application.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/public/models/seite.js" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/server/models/Persistent.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/public/services/rest.js" />
       </list>
     </option>
   </component>
@@ -1254,8 +1264,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-5" y="29" width="1930" height="1027" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49943504" visible="true" weight="0.26943558" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49943504" visible="true" weight="0.27209798" />
       <window_info id="Structure" order="1" sideWeight="0.500565" side_tool="true" weight="0.2827476" />
       <window_info id="Web" order="2" show_stripe_button="false" sideWeight="0.500565" side_tool="true" weight="0.2827476" />
       <window_info id="Favorites" order="3" sideWeight="0.500565" side_tool="true" weight="0.2827476" />
@@ -1276,7 +1287,7 @@
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32786885" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5007278" side_tool="true" weight="0.31487343" />
       <window_info anchor="bottom" id="Terminal" order="12" weight="0.32881355" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="13" sideWeight="0.4992722" visible="true" weight="0.300905" />
+      <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.4992722" visible="true" weight="0.300905" />
       <window_info anchor="bottom" id="Java Enterprise" order="14" show_stripe_button="false" weight="0.3299435" />
       <window_info anchor="bottom" id="REST Client" order="15" weight="0.4124294" />
       <window_info anchor="bottom" id="Database Changes" order="16" weight="0.329235" />
@@ -1340,7 +1351,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Client: Kommentare hinzugefügt." />
     <MESSAGE value="Version -&gt; &quot;1.1.0-RELEASE&quot;." />
     <MESSAGE value="Kommentar korrigiert." />
     <MESSAGE value="Entity-Basisklasse ergänzt." />
@@ -1365,7 +1375,8 @@
     <MESSAGE value="Server: Hilfsmethoden für bidirektionale Updates von 1:n-Beziehungen zwischen Entities." />
     <MESSAGE value="Autoconfig -&gt; v2.3.2 (CORS), Version =&gt; &quot;2.4.0-RELEASE&quot;." />
     <MESSAGE value="Server: Merkbarkeit der Persistent-Hilfsmethoden verbessert." />
-    <option name="LAST_COMMIT_MESSAGE" value="Server: Merkbarkeit der Persistent-Hilfsmethoden verbessert." />
+    <MESSAGE value="Server: Persistent-Hilfsmethoden optimiert für den Fall, dass keine Veränderung erfolgt." />
+    <option name="LAST_COMMIT_MESSAGE" value="Server: Persistent-Hilfsmethoden optimiert für den Fall, dass keine Veränderung erfolgt." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
@@ -1522,13 +1533,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/public/services/rest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="538">
-          <caret line="179" column="15" selection-start-line="179" selection-start-column="15" selection-end-line="179" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/public/models/seite.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="134">
@@ -1545,7 +1549,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/server/models/Persistent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-585">
+        <state relative-caret-position="30">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#663#664#0" expanded="true" />
@@ -1553,6 +1558,13 @@
             <element signature="e#718#719#0" expanded="true" />
             <element signature="e#748#749#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/services/rest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="190" column="30" selection-start-line="190" selection-start-column="13" selection-end-line="190" selection-end-column="30" />
         </state>
       </provider>
     </entry>

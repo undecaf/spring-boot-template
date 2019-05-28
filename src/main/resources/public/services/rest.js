@@ -186,21 +186,20 @@ app.service("RestService", function ($mdToast, $http, $log, Seite) {
 
 
     /**
-     * Ersetzt in den Request-Daten alle Entity-Objekte durch ihre self-Links.
+     * Ersetzt in den Request-Daten alle _eingebetteten_ Entity-Objekte durch ihre self-Links.
      */
-    function entitiesVerlinken(obj) {
-        if (angular.isArray(obj)) {
-            // In Arrayelementen ersetzen
-            obj.forEach(entitiesVerlinken);
+    function entitiesVerlinken(obj, rekursiv) {
+        if (obj._links && obj._links.self && rekursiv) {
+            // Templates aus Link entfernen und Objekt durch diesen Link ersetzen
+            return obj._links.self.href.replace(/\{.*\}$/, "");
 
-        } else if (angular.isObject(obj)) {
-            // Verlinkte Objekte suchen und durch ihre self-Links ersetzen
-            Object.keys(obj).forEach(k => {
-                if (obj[k] && obj[k]._links && obj[k]._links.self) {
-                    // Templates aus Link entfernen
-                    obj[k] = obj[k]._links.self.href.replace(/\{.*\}$/, "");
-                }
-            });
+        } else if (isArray(obj)) {
+            // Arrayelemente ersetzen, wenn nötig
+            obj.forEach((e, i) => obj[i] = entitiesVerlinken(e, true));
+
+        } else if (isObject(obj)) {
+            // Properties ersetzen, wenn nötig
+            Object.keys(obj).forEach(k => obj[k] = entitiesVerlinken(obj[k], true));
         }
 
         return obj;
