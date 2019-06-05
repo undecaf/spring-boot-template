@@ -72,7 +72,7 @@ app.service("RestService", function ($mdToast, $http, $log, Seite) {
      *                 Objekt
      */
     this.laden = (konstruktor, url, parameter) => {
-        $log.debug("RestService.laden()", konstruktor, url);
+        $log.debug("RestService.laden()", konstruktor.name, url, parameter);
 
         return $http
             // Template aus dem URL entfernen
