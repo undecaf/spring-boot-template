@@ -27,7 +27,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="Maven: at.rennweg.htl:autoconfig:2.4.0-RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: at.rennweg.htl:autoconfig:2.5.0-RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-web:2.0.9.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter:2.0.9.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot:2.0.9.RELEASE" level="project" />
@@ -143,6 +143,12 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-context:5.0.13.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.aspectj:aspectjtools:1.9.2" level="project" />
     <orderEntry type="library" name="Maven: org.aspectj:aspectjrt:1.9.2" level="project" />
+    <orderEntry type="library" name="Maven: de.invesdwin:invesdwin-instrument:1.0.3" level="project" />
+    <orderEntry type="library" name="Maven: commons-io:commons-io:2.6" level="project" />
+    <orderEntry type="library" name="Maven: org.assertj:assertj-core:3.9.1" level="project" />
+    <orderEntry type="library" name="Maven: com.google.code.findbugs:jsr305:3.0.2" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:jcl-over-slf4j:1.7.26" level="project" />
+    <orderEntry type="library" name="Maven: org.zeroturnaround:zt-exec:1.10" level="project" />
     <orderEntry type="library" name="Maven: org.hibernate:hibernate-ehcache:5.2.18.Final" level="project" />
     <orderEntry type="library" name="Maven: org.jboss.logging:jboss-logging:3.3.2.Final" level="project" />
     <orderEntry type="library" name="Maven: net.sf.ehcache:ehcache:2.10.6" level="project" />
@@ -160,7 +166,6 @@
     <orderEntry type="library" scope="TEST" name="Maven: org.springframework.boot:spring-boot-test-autoconfigure:2.0.9.RELEASE" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: com.jayway.jsonpath:json-path:2.4.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: junit:junit:4.12" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.assertj:assertj-core:3.9.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.mockito:mockito-core:2.15.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: net.bytebuddy:byte-buddy:1.7.11" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: net.bytebuddy:byte-buddy-agent:1.7.11" level="project" />

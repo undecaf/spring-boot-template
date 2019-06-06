@@ -1,8 +1,8 @@
 package server;
 
+import de.invesdwin.instrument.DynamicInstrumentationLoader;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 
 
 /**
@@ -14,6 +14,10 @@ import org.springframework.security.config.annotation.method.configuration.Enabl
 public class Main {
 
 	public static void main(String[] args) {
+		// Java Instrumentation-Agent laden und alle Klassen weaven
+		DynamicInstrumentationLoader.waitForInitialized();
+		DynamicInstrumentationLoader.initLoadTimeWeavingContext();
+
 		SpringApplication.run(Main.class, args);
 	}
 

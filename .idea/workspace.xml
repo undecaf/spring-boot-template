@@ -6,9 +6,17 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09e9b735-16ac-4ca8-918b-e4fd1f6d6c3c" name="Default" comment="Client: auch das Laden von Entities ermöglichen, für die es keine Factory gibt.">
+    <list default="true" id="09e9b735-16ac-4ca8-918b-e4fd1f6d6c3c" name="Default" comment="Server: AspectJ &quot;Load time weaving&quot; statt Spring AOP verwenden.">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__de_invesdwin_invesdwin_instrument_1_0_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_26.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_zeroturnaround_zt_exec_1_10.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__at_rennweg_htl_autoconfig_2_4_0_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__at_rennweg_htl_autoconfig_2_5_0_RELEASE.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/public/services/rest.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/services/rest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-vorlage.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-vorlage.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/server/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/Main.java" afterDir="false" />
     </list>
     <ignored path="target/" />
     <ignored path=".mvn/" />
@@ -74,17 +82,7 @@
     <favorites_list name="Spring Boot-Projektvorlage" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/config/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -141,7 +139,6 @@
         <option value="$PROJECT_DIR$/src/main/java/at/rennweg/htl/sew/main/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/config/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/server/models/Message.java" />
-        <option value="$PROJECT_DIR$/src/main/java/server/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/server/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/server/models/MessageRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/server/models/UserInfoService.java" />
@@ -160,9 +157,10 @@
         <option value="$PROJECT_DIR$/src/main/resources/public/index.html" />
         <option value="$PROJECT_DIR$/src/main/resources/config/application.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/public/models/seite.js" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/server/models/Persistent.java" />
         <option value="$PROJECT_DIR$/src/main/resources/public/services/rest.js" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/server/Main.java" />
       </list>
     </option>
   </component>
@@ -318,8 +316,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -1249,7 +1247,7 @@
   <component name="ToolWindowManager">
     <frame x="-5" y="29" width="1930" height="1027" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49943504" visible="true" weight="0.28541002" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49943504" visible="true" weight="0.2912673" />
       <window_info id="Structure" order="1" sideWeight="0.500565" side_tool="true" weight="0.2827476" />
       <window_info id="Web" order="2" show_stripe_button="false" sideWeight="0.500565" side_tool="true" weight="0.2827476" />
       <window_info id="Favorites" order="3" sideWeight="0.500565" side_tool="true" weight="0.2827476" />
@@ -1270,7 +1268,7 @@
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32786885" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5007278" side_tool="true" weight="0.31487343" />
       <window_info anchor="bottom" id="Terminal" order="12" weight="0.32881355" />
-      <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.4992722" visible="true" weight="0.300905" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="13" sideWeight="0.4992722" visible="true" weight="0.300905" />
       <window_info anchor="bottom" id="Java Enterprise" order="14" show_stripe_button="false" weight="0.3299435" />
       <window_info anchor="bottom" id="REST Client" order="15" weight="0.4124294" />
       <window_info anchor="bottom" id="Database Changes" order="16" weight="0.329235" />
@@ -1334,8 +1332,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Entity-Basisklasse ergänzt." />
-    <MESSAGE value="Fix: Entity-Version auch bei DELETE verifizieren." />
     <MESSAGE value="Fix: Methode variante() aus Seite-Factory entfernt, war überflüssig." />
     <MESSAGE value="Client: Modul ngCookies hinzugefügt." />
     <MESSAGE value="Client: Authentifizierungs-Service" />
@@ -1359,7 +1355,9 @@
     <MESSAGE value="Server: Persistent-Hilfsmethoden optimiert für den Fall, dass keine Veränderung erfolgt." />
     <MESSAGE value="Fix: auch Entities, die in Arrays eingebettet sind, in Requests durch ihre Links ersetzen." />
     <MESSAGE value="Client: auch das Laden von Entities ermöglichen, für die es keine Factory gibt." />
-    <option name="LAST_COMMIT_MESSAGE" value="Client: auch das Laden von Entities ermöglichen, für die es keine Factory gibt." />
+    <MESSAGE value="Fix: Logging im REST-Service." />
+    <MESSAGE value="Server: AspectJ &quot;Load time weaving&quot; statt Spring AOP verwenden." />
+    <option name="LAST_COMMIT_MESSAGE" value="Server: AspectJ &quot;Load time weaving&quot; statt Spring AOP verwenden." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
@@ -1405,13 +1403,6 @@
     <entry file="jar://$MAVEN_REPOSITORY$/at/rennweg/htl/autoconfig/1.0.0-RELEASE/autoconfig-1.0.0-RELEASE.jar!/public/index.html" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/data.sql" />
     <entry file="jar://$MAVEN_REPOSITORY$/at/rennweg/htl/autoconfig/1.0.4-RELEASE/autoconfig-1.0.4-RELEASE.jar!/application-tuning.properties" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/server/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/at/rennweg/htl/autoconfig/1.0.0-RELEASE/autoconfig-1.0.0-RELEASE.jar!/at/rennweg/htl/sew/autoconfig/WebAutoConfig.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-390">
@@ -1516,13 +1507,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/server/models/Persistent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -1548,6 +1532,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/server/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
         </state>
       </provider>
     </entry>
