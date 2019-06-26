@@ -6,13 +6,8 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09e9b735-16ac-4ca8-918b-e4fd1f6d6c3c" name="Default" comment="Server: AspectJ &quot;Load time weaving&quot; statt Spring AOP verwenden.">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__de_invesdwin_invesdwin_instrument_1_0_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_26.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_zeroturnaround_zt_exec_1_10.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__at_rennweg_htl_autoconfig_2_4_0_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__at_rennweg_htl_autoconfig_2_5_0_RELEASE.xml" afterDir="false" />
+    <list default="true" id="09e9b735-16ac-4ca8-918b-e4fd1f6d6c3c" name="Default" comment="Server: javax-Pakete nicht weaven, zurück zu OpenJDK.">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__at_rennweg_htl_autoconfig_2_5_0_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__at_rennweg_htl_autoconfig_2_5_1_RELEASE.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-boot-vorlage.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-vorlage.iml" afterDir="false" />
@@ -82,7 +77,7 @@
     <favorites_list name="Spring Boot-Projektvorlage" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -159,8 +154,9 @@
         <option value="$PROJECT_DIR$/src/main/resources/public/models/seite.js" />
         <option value="$PROJECT_DIR$/src/main/java/server/models/Persistent.java" />
         <option value="$PROJECT_DIR$/src/main/resources/public/services/rest.js" />
-        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/META-INF/aop.xml" />
         <option value="$PROJECT_DIR$/src/main/java/server/Main.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -278,46 +274,12 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Spring Boot-Projektvorlage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-vorlage" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Spring Boot-Projektvorlage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-vorlage" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Spring Boot-Projektvorlage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-vorlage" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Spring Boot-Projektvorlage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-vorlage" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -353,6 +315,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.27701148" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
@@ -1182,8 +1145,8 @@
       <module name="spring-boot-vorlage" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="server.Main" />
       <option name="ACTIVE_PROFILES" value="tuning" />
-      <option name="VM_PARAMETERS" value="--illegal-access=deny --add-opens java.base/java.io=ALL-UNNAMED --add-opens java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED" />
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8 (OpenJDK)" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -1191,8 +1154,8 @@
     <configuration name="Server" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="spring-boot-vorlage" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="server.Main" />
-      <option name="VM_PARAMETERS" value="--illegal-access=deny --add-opens java.base/java.io=ALL-UNNAMED --add-opens java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED" />
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8 (OpenJDK)" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -1247,7 +1210,7 @@
   <component name="ToolWindowManager">
     <frame x="-5" y="29" width="1930" height="1027" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49943504" visible="true" weight="0.2912673" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49943504" visible="true" weight="0.30138445" />
       <window_info id="Structure" order="1" sideWeight="0.500565" side_tool="true" weight="0.2827476" />
       <window_info id="Web" order="2" show_stripe_button="false" sideWeight="0.500565" side_tool="true" weight="0.2827476" />
       <window_info id="Favorites" order="3" sideWeight="0.500565" side_tool="true" weight="0.2827476" />
@@ -1258,8 +1221,8 @@
       <window_info active="true" anchor="bottom" id="Database Console" order="0" visible="true" weight="0.32733813" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32881355" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49946752" weight="0.31638417" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.39887005" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49946752" weight="0.31561086" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.39819005" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" />
@@ -1268,7 +1231,7 @@
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32786885" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5007278" side_tool="true" weight="0.31487343" />
       <window_info anchor="bottom" id="Terminal" order="12" weight="0.32881355" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="13" sideWeight="0.4992722" visible="true" weight="0.300905" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="13" sideWeight="0.4992722" visible="true" weight="0.3167421" />
       <window_info anchor="bottom" id="Java Enterprise" order="14" show_stripe_button="false" weight="0.3299435" />
       <window_info anchor="bottom" id="REST Client" order="15" weight="0.4124294" />
       <window_info anchor="bottom" id="Database Changes" order="16" weight="0.329235" />
@@ -1332,8 +1295,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Fix: Methode variante() aus Seite-Factory entfernt, war überflüssig." />
-    <MESSAGE value="Client: Modul ngCookies hinzugefügt." />
     <MESSAGE value="Client: Authentifizierungs-Service" />
     <MESSAGE value="Client: Authentifizierungs-Service hinzugefügt." />
     <MESSAGE value="Server: OAuth2-Support durch neue Autoconfig, Version -&gt; &quot;2.0.0-RELEASE&quot;." />
@@ -1357,7 +1318,9 @@
     <MESSAGE value="Client: auch das Laden von Entities ermöglichen, für die es keine Factory gibt." />
     <MESSAGE value="Fix: Logging im REST-Service." />
     <MESSAGE value="Server: AspectJ &quot;Load time weaving&quot; statt Spring AOP verwenden." />
-    <option name="LAST_COMMIT_MESSAGE" value="Server: AspectJ &quot;Load time weaving&quot; statt Spring AOP verwenden." />
+    <MESSAGE value="Server: Internen Java Instrumentation-Agent für LTW verwenden." />
+    <MESSAGE value="Server: javax-Pakete nicht weaven, zurück zu OpenJDK." />
+    <option name="LAST_COMMIT_MESSAGE" value="Server: javax-Pakete nicht weaven, zurück zu OpenJDK." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
@@ -1368,7 +1331,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.0.5.RELEASE/spring-context-5.0.5.RELEASE.jar!/org/springframework/context/annotation/Primary.class" />
     <entry file="file://$PROJECT_DIR$/src/main/java/at/rennweg/htl/sew/main/Main.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/at/rennweg/htl/sew/autoconfig/AuthAutoConfig.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/at/rennweg/htl/sew/autoconfig/WebAutoConfig.java" />
@@ -1535,17 +1497,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/server/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/aop.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="316">
+          <caret line="23" column="47" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
-          <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+          <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/server/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="18" column="64" selection-start-line="18" selection-start-column="64" selection-end-line="18" selection-end-column="64" />
         </state>
       </provider>
     </entry>

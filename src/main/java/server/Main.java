@@ -14,11 +14,15 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class Main {
 
 	public static void main(String[] args) {
-		// Java Instrumentation-Agent laden und alle Klassen weaven
-		DynamicInstrumentationLoader.waitForInitialized();
-		DynamicInstrumentationLoader.initLoadTimeWeavingContext();
+		SpringApplication application = new SpringApplication(Main.class);
 
-		SpringApplication.run(Main.class, args);
+		// Zuallererst den Java Instrumentation-Agent laden und weaven
+		application.addInitializers(context -> {
+			DynamicInstrumentationLoader.waitForInitialized();
+			DynamicInstrumentationLoader.initLoadTimeWeavingContext();
+		});
+
+		application.run(args);
 	}
 
 }
