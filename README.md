@@ -4,8 +4,10 @@ Basiert auf der [Spring Boot-Konfiguration für den SEW-Unterricht](https://gith
 und enthält zusätzliche Features:
 
 ## Spring Boot
-+ <code>Main</code>-Klasse, macht das das Projekt lauffähig
++ <code>Main</code>-Klasse, macht das das Projekt lauffähig und führt „Load-time weaving“ (LTW) 
+  ohne externen Agenten durch
 + Serverseitige Paketstruktur <code>server.models</code> und <code>server.repositories</code>
++ Entities-Basisklasse `Persistent` mit Hilfsmethoden für bidirektionale 1:n-Beziehungen
 + H2-Datenbank <code>db/datenbank</code>, wird bei jedem Start neu erzeugt und neu von <code>data.sql</code>
 initialisiert
 + REST-API auf Pfad <code>http://127.0.0.1:8080/api</code>
