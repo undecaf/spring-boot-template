@@ -1,6 +1,5 @@
 package server;
 
-import de.invesdwin.instrument.DynamicInstrumentationLoader;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -14,15 +13,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class Main {
 
 	public static void main(String[] args) {
-		SpringApplication application = new SpringApplication(Main.class);
-
-		// Zuallererst den Java Instrumentation-Agent laden und weaven
-		application.addInitializers(context -> {
-			DynamicInstrumentationLoader.waitForInitialized();
-			DynamicInstrumentationLoader.initLoadTimeWeavingContext();
-		});
-
-		application.run(args);
+		SpringApplication.run(Main.class, args);
 	}
 
 }
