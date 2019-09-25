@@ -48,7 +48,7 @@ app.component("fileContentChooser", {
 
 app.controller("FileContentChooserController", function($element) {
 
-    var fileInput = $element.find("input");
+    let fileInput = $element.find("input");
 
 
     this.$onInit = () => {
@@ -67,7 +67,7 @@ app.controller("FileContentChooserController", function($element) {
     fileInput.on("change", () => {
         let files = fileInput[0].files;
         if (files instanceof FileList) {
-            var promises = [];
+            let promises = [];
 
             // Für jede Datei ein Promise auf die Beendigung des Lesens erzeugen
             for (let i = 0; i < files.length; i++) {

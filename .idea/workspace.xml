@@ -6,34 +6,12 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09e9b735-16ac-4ca8-918b-e4fd1f6d6c3c" name="Default" comment="Spring Boot -&gt; v2.1.7, Versionsupdates der Abhängigkeiten.">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__at_rennweg_htl_autoconfig_2_6_0_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__at_rennweg_htl_autoconfig_2_7_0_RELEASE.xml" afterDir="false" />
+    <list default="true" id="09e9b735-16ac-4ca8-918b-e4fd1f6d6c3c" name="Default" comment="Verwendet autoconfig v2.7.1: Deprecations auflösen, ProjectionFactory für Controller">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/components/file-content-chooser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/components/file-content-chooser.js" afterDir="false" />
     </list>
-    <ignored path="target/" />
-    <ignored path=".mvn/" />
-    <ignored path="db/" />
-    <ignored mask="mvnw*" />
-    <ignored path=".idea/dataSources/" />
-    <ignored path=".idea/dictionaries/" />
-    <manually-removed-from-ignored>
-      <directory path="$PROJECT_DIR$/target/" />
-      <directory path="src/test/" />
-      <directory path="src/main/java/server/models/" />
-      <directory path="$PROJECT_DIR$/target/test-classes/" />
-      <directory path=".idea/dictionaries/" />
-      <directory path="$PROJECT_DIR$/target/classes/" />
-      <directory path="$PROJECT_DIR$/.idea/httpRequests/" />
-      <directory path="$PROJECT_DIR$/target/db/" />
-      <directory path=".idea/dataSources/" />
-      <directory path=".idea/httpRequests/" />
-      <directory path="$PROJECT_DIR$/target/surefire-reports/" />
-      <directory path="$PROJECT_DIR$/out/" />
-      <directory path="$PROJECT_DIR$/target/maven-archiver/" />
-      <directory path="src/" />
-      <directory path="$PROJECT_DIR$/target/maven-status/" />
-      <directory path=".idea/" />
-    </manually-removed-from-ignored>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,19 +51,6 @@
   <component name="FavoritesManager">
     <favorites_list name="Spring Boot-Projektvorlage" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -96,19 +61,6 @@
     </option>
     <option name="SCHEME" value="Project" />
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>webshop</find>
-      <find>autoconfigure</find>
-      <find>server mit</find>
-      <find>Page</find>
-      <find>modifier</find>
-    </findStrings>
-    <dirStrings>
-      <dir>$PROJECT_DIR$/src/main/resources/static</dir>
-      <dir>$PROJECT_DIR$</dir>
-    </dirStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -118,57 +70,11 @@
     </option>
     <option name="RESET_MODE" value="MIXED" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/main/resources/static/index.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/demo/Message.java" />
-        <option value="$PROJECT_DIR$/src/main/java/data.sql" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/demo/MessageRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/server/security/BenutzerDetails.java" />
-        <option value="$PROJECT_DIR$/src/main/java/server/security/Sicherheitseinstellungen.java" />
-        <option value="$PROJECT_DIR$/src/main/java/server/security/Authentifizierung.java" />
-        <option value="$PROJECT_DIR$/src/main/java/server/security/WebAutoConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/server/security/AuthAutoConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/at/rennweg/htl/sew/AuthAutoConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/at/rennweg/htl/sew/security/BenutzerDetails.java" />
-        <option value="$PROJECT_DIR$/src/main/java/server/models/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/at/rennweg/htl/sew/security/UserInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/at/rennweg/htl/sew/security/AuthAutoConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/at/rennweg/htl/sew/autoconfig/AuthAutoConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/at/rennweg/htl/sew/autoconfig/WebAutoConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/at/rennweg/htl/sew/main/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/config/application.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/server/models/Message.java" />
-        <option value="$PROJECT_DIR$/src/main/java/server/UserController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/server/models/MessageRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/server/models/UserInfoService.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/data.sql" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/src/test/java/AutoconfigTests.java" />
-        <option value="$PROJECT_DIR$/src/test/java/MainTests.java" />
-        <option value="$PROJECT_DIR$/src/test/java/server/MainTests.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/public/vendor/angular-ui-router-1.0.20/angular-ui-router.min.js" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/9b6e083f-591f-4ff2-b137-874b9e08bab6/console.sql" />
-        <option value="$PROJECT_DIR$/src/main/resources/public/models/persistent.js" />
-        <option value="$PROJECT_DIR$/src/main/resources/public/components/http-aktiv.js" />
-        <option value="$PROJECT_DIR$/src/main/resources/public/app.js" />
-        <option value="$PROJECT_DIR$/src/main/resources/public/services/auth.js" />
-        <option value="$PROJECT_DIR$/src/main/resources/public/index.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/config/application.properties" />
-        <option value="$PROJECT_DIR$/src/main/resources/public/models/seite.js" />
-        <option value="$PROJECT_DIR$/src/main/java/server/models/Persistent.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/public/services/rest.js" />
-        <option value="$PROJECT_DIR$/src/main/resources/META-INF/aop.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/at/rennweg/htl/sew/autoconfig/LoadTimeWaver.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/META-INF/spring.factories" />
-        <option value="$PROJECT_DIR$/src/main/java/server/LoadTimeWaver.java" />
-        <option value="$PROJECT_DIR$/src/main/java/server/LoadTimeWeaver.java" />
-        <option value="$PROJECT_DIR$/src/main/java/at/rennweg/htl/sew/autoconfig/LoadTimeWeaver.java" />
-        <option value="$PROJECT_DIR$/src/main/java/server/Main.java" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-      </list>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
     </option>
   </component>
   <component name="JsBowerSettings">
@@ -189,22 +95,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="MavenProjectNavigator">
-    <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="Vorlage" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-      </expand>
-      <select />
-    </treeState>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="29" />
-    <option name="width" value="1930" />
-    <option name="height" value="1017" />
-  </component>
+  <component name="ProjectId" id="1QuOEKAXzlsK5katIUBQXJVCb8T" />
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
       <profile-state>
@@ -222,53 +113,6 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Spring Boot-Projektvorlage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-vorlage" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Spring Boot-Projektvorlage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-vorlage" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Spring Boot-Projektvorlage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-vorlage" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Spring Boot-Projektvorlage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-vorlage" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Spring Boot-Projektvorlage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-vorlage" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
-    </panes>
-  </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
@@ -285,13 +129,14 @@
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RequestMappingsPanelWidth2" value="15" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SearchEverywhereHistoryKey" value="reopen&#9;ACTION&#9;$LRU&#10;git&#9;ACTION&#9;Git.Init&#10;jdk&#9;ACTION&#9;SwitchBootJdk" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533720651881" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="H2" />
     <property name="database.console.LAST_STATE" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../../ITP/4. Jg/2018-2019/4BI/ITP-Parship/versuch" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="/usr/bin/node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="options.lastSelected" value="reference.settings.project.maven.runner" />
@@ -1193,48 +1038,6 @@
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="4900000" />
   </component>
-  <component name="ToolWindowManager">
-    <frame x="-5" y="29" width="1930" height="1027" extended-state="6" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49943504" visible="true" weight="0.314164" />
-      <window_info id="Structure" order="1" sideWeight="0.500565" side_tool="true" weight="0.2827476" />
-      <window_info id="Web" order="2" show_stripe_button="false" sideWeight="0.500565" side_tool="true" weight="0.2827476" />
-      <window_info id="Favorites" order="3" sideWeight="0.500565" side_tool="true" weight="0.2827476" />
-      <window_info id="Designer" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Capture Tool" order="6" />
-      <window_info id="Image Layers" order="7" />
-      <window_info active="true" anchor="bottom" id="Database Console" order="0" visible="true" weight="0.32733813" />
-      <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" weight="0.32881355" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49946752" weight="0.31561086" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.39819005" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="7" />
-      <window_info anchor="bottom" id="NativeScript" order="8" show_stripe_button="false" weight="0.3299435" />
-      <window_info anchor="bottom" id="Spring" order="9" show_stripe_button="false" weight="0.32881355" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32786885" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5007278" side_tool="true" weight="0.31487343" />
-      <window_info anchor="bottom" id="Terminal" order="12" weight="0.32881355" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="13" sideWeight="0.4992722" visible="true" weight="0.3167421" />
-      <window_info anchor="bottom" id="Java Enterprise" order="14" show_stripe_button="false" weight="0.3299435" />
-      <window_info anchor="bottom" id="REST Client" order="15" weight="0.4124294" />
-      <window_info anchor="bottom" id="Database Changes" order="16" weight="0.329235" />
-      <window_info anchor="bottom" id="Docker" order="17" show_stripe_button="false" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" show_stripe_button="false" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" weight="0.32793868" />
-      <window_info anchor="right" id="Maven Projects" order="4" weight="0.32761088" />
-      <window_info anchor="right" id="Palette&#9;" order="5" />
-      <window_info anchor="right" id="Palette" order="6" />
-      <window_info anchor="right" id="Capture Analysis" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="right" id="Bean Validation" order="9" show_stripe_button="false" />
-      <window_info anchor="right" id="Maven" order="10" />
-    </layout>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
@@ -1244,20 +1047,7 @@
         <entry key="MAIN">
           <value>
             <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
-              <option name="COLUMN_ORDER">
-                <list>
-                  <option value="0" />
-                  <option value="1" />
-                  <option value="2" />
-                  <option value="3" />
-                </list>
-              </option>
+              <option name="COLUMN_ORDER" />
             </State>
           </value>
         </entry>
@@ -1281,8 +1071,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Fix: Priorisierung von Properties =&gt; application.properties nach resources/config verlegt." />
-    <MESSAGE value="Fix: AuthService laden." />
     <MESSAGE value="Einbinden von Benutzern als Entity vereinfacht; HATEOAS auf /api/me; Version -&gt; &quot;2.1.0-RELEASE&quot;." />
     <MESSAGE value="Autoconfig-Update." />
     <MESSAGE value="Fix: CORS nur auf REST-API, Autoconfig-Update." />
@@ -1306,7 +1094,9 @@
     <MESSAGE value="Dokumentation nachführen" />
     <MESSAGE value="Verwendet autoconfig v2.6.0: load-time weaving erfolgt automatisch." />
     <MESSAGE value="Verwendet autoconfig v2.7.0: Spring Boot -&gt; v2.1.7, Versionsupdates der Abhängigkeiten." />
-    <option name="LAST_COMMIT_MESSAGE" value="Verwendet autoconfig v2.7.0: Spring Boot -&gt; v2.1.7, Versionsupdates der Abhängigkeiten." />
+    <MESSAGE value="Verwendet autoconfig v2.7.1: Deprecations auflösen, ProjectionFactory für Controller" />
+    <MESSAGE value="Client: var durch let ersetzen, wo möglich." />
+    <option name="LAST_COMMIT_MESSAGE" value="Client: var durch let ersetzen, wo möglich." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1314,7 +1104,6 @@
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/at/rennweg/htl/sew/autoconfig/LoadTimeWeaver.java</url>
           <line>19</line>
-          <properties />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
@@ -1327,193 +1116,6 @@
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/at/rennweg/htl/sew/autoconfig/WebAutoConfig.java" />
-    <entry file="jar://$PROJECT_DIR$/../autoconfig/target/artifacts/sew-autoconfig.jar!/at/rennweg/htl/sew/autoconfig/DatabaseAutoConfig.class" />
-    <entry file="das://9b6e083f-591f-4ff2-b137-874b9e08bab6/database/DATENBANK/schema/INFORMATION_SCHEMA/table/COLLATIONS" />
-    <entry file="das://9b6e083f-591f-4ff2-b137-874b9e08bab6/database/DATENBANK/schema/INFORMATION_SCHEMA/table/COLUMNS" />
-    <entry file="jar://$PROJECT_DIR$/../autoconfig/target/artifacts/sew-autoconfig.jar!/at/rennweg/htl/sew/autoconfig/AuthAutoConfig.class" />
-    <entry file="jar://$PROJECT_DIR$/../autoconfig/target/artifacts/sew-autoconfig.jar!/at/rennweg/htl/sew/autoconfig/UserInfo.class" />
-    <entry file="jar://$PROJECT_DIR$/../autoconfig/target/artifacts/sew-autoconfig.jar!/at/rennweg/htl/sew/autoconfig/WebAutoConfig.class" />
-    <entry file="das://9b6e083f-591f-4ff2-b137-874b9e08bab6/database/DATENBANK/schema/INFORMATION_SCHEMA/table/SEQUENCES" />
-    <entry file="das://9b6e083f-591f-4ff2-b137-874b9e08bab6/database/DATENBANK/schema/INFORMATION_SCHEMA/table/SEQUENCES.sql" />
-    <entry file="das://9b6e083f-591f-4ff2-b137-874b9e08bab6/database/DATENBANK/schema/PUBLIC/table/MESSAGE" />
-    <entry file="file://$PROJECT_DIR$/mvnw">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-585" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvnw.cmd">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-585" />
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/sew-autoconfig.jar!/at/rennweg/htl/sew/autoconfig/UserController.class" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/server/UserController.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/config/application.properties.ignored" />
-    <entry file="jar://$PROJECT_DIR$/sew-autoconfig.jar!/at/rennweg/htl/sew/autoconfig/UserInfo.class" />
-    <entry file="jar://$PROJECT_DIR$/sew-autoconfig.jar!/at/rennweg/htl/sew/autoconfig/AuthAutoConfig.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/server/models/Message.java" />
-    <entry file="jar://$PROJECT_DIR$/sew-autoconfig.jar!/at/rennweg/htl/sew/autoconfig/AuthAutoConfig.class" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/server/repositories/MessageRepository.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/server/models/UserInfoService.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/at/rennweg/htl/autoconfig/1.0.0-RELEASE/autoconfig-1.0.0-RELEASE.jar!/public/index.html" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/data.sql" />
-    <entry file="jar://$MAVEN_REPOSITORY$/at/rennweg/htl/autoconfig/1.0.4-RELEASE/autoconfig-1.0.4-RELEASE.jar!/application-tuning.properties" />
-    <entry file="jar://$MAVEN_REPOSITORY$/at/rennweg/htl/autoconfig/1.0.0-RELEASE/autoconfig-1.0.0-RELEASE.jar!/at/rennweg/htl/sew/autoconfig/WebAutoConfig.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-390">
-          <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="1155" column="63" selection-start-line="1155" selection-start-column="53" selection-end-line="1155" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/.name">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/public/vendor/angular-ui-router-1.0.20/angular-ui-router.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/9b6e083f-591f-4ff2-b137-874b9e08bab6/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/server/controllers/Me.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/public/components/file-content-chooser.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/public/components/http-aktiv.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/public/models/persistent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="45" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/public/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="103" selection-start-line="3" selection-start-column="103" selection-end-line="3" selection-end-column="103" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/at/rennweg/htl/autoconfig/2.0.0-RELEASE/autoconfig-2.0.0-RELEASE.jar!/at/rennweg/htl/sew/autoconfig/UserInfo.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/at/rennweg/htl/autoconfig/2.0.0-RELEASE/autoconfig-2.0.0-RELEASE.jar!/at/rennweg/htl/sew/autoconfig/WebAutoConfig.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-180" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/public/services/auth.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/public/models/seite.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="27" column="46" lean-forward="true" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/public/services/rest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="74" column="74" selection-start-line="74" selection-start-column="74" selection-end-line="74" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/config/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/aop.xml" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/server/models/Persistent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-255">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#663#664#0" expanded="true" />
-            <element signature="e#688#689#0" expanded="true" />
-            <element signature="e#718#719#0" expanded="true" />
-            <element signature="e#748#749#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/server/MainTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="13" column="32" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/spring.factories" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/at/rennweg/htl/sew/autoconfig/LoadTimeWeaver.java" />
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="90">
-            <caret line="6" column="59" selection-start-line="6" selection-start-column="59" selection-end-line="6" selection-end-column="59" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/server/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="15" column="42" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
-          <folding>
-            <element signature="e#353#354#0" expanded="true" />
-            <element signature="e#399#400#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
   </component>
   <component name="masterDetails">
     <states>
