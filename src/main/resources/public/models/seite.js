@@ -19,18 +19,19 @@ app.factory("Seite", function () {
             letzte: undefined,
             istErste: undefined,
             istLetzte: undefined,
+            erstesElement: undefined,
+            letztesElement: undefined,
         };
 
         // Daten den Properties zuweisen
         Object.assign(this, properties, data);
 
         // Anonyme Objekte in Entities umwandeln
-        this.entities = data[konstruktor.path]
+        this.entities = data._embedded[konstruktor.path]
             .map(obj => new konstruktor(obj));
 
         // Unerwünschte Properties entfernen
         delete this._embedded;
-        delete this[konstruktor.path];
 
         // Hilfsvariable erzeugen
         this.laufendeNr = Math.min(this.page.number + 1, this.page.totalPages);
@@ -41,6 +42,9 @@ app.factory("Seite", function () {
 
         this.istErste = this.page.number <= this.erste;
         this.istLetzte = this.page.number >= this.letzte;
+
+        this.erstesElement = Math.min(this.page.size * this.page.number + 1, this.page.totalElements);
+        this.letztesElement = Math.min(this.page.size * this.page.number + this.page.size, this.page.totalElements);
 
         // Properties schreibschützen
         Object.keys(properties).forEach(k => Object.defineProperty(this, k, {writable: false}));
