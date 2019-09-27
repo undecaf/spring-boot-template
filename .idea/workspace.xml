@@ -6,12 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09e9b735-16ac-4ca8-918b-e4fd1f6d6c3c" name="Default" comment="Verwendet autoconfig v2.7.1: Deprecations auflösen, ProjectionFactory für Controller">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/public/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/public/components/file-content-chooser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/components/file-content-chooser.js" afterDir="false" />
-    </list>
+    <list default="true" id="09e9b735-16ac-4ca8-918b-e4fd1f6d6c3c" name="Default" comment="Anpassen an REST-API von Spring 2.1" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1071,8 +1066,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Einbinden von Benutzern als Entity vereinfacht; HATEOAS auf /api/me; Version -&gt; &quot;2.1.0-RELEASE&quot;." />
-    <MESSAGE value="Autoconfig-Update." />
     <MESSAGE value="Fix: CORS nur auf REST-API, Autoconfig-Update." />
     <MESSAGE value="Zusätzliche Treiber und Konfigurationsvorlagen für PostgreSQL, MS SQL Server, MariaDB und MySQL." />
     <MESSAGE value="Client: REST-Service kann Queries abfragen und einzelne Entities laden." />
@@ -1096,7 +1089,9 @@
     <MESSAGE value="Verwendet autoconfig v2.7.0: Spring Boot -&gt; v2.1.7, Versionsupdates der Abhängigkeiten." />
     <MESSAGE value="Verwendet autoconfig v2.7.1: Deprecations auflösen, ProjectionFactory für Controller" />
     <MESSAGE value="Client: var durch let ersetzen, wo möglich." />
-    <option name="LAST_COMMIT_MESSAGE" value="Client: var durch let ersetzen, wo möglich." />
+    <MESSAGE value="var durch let ersetzen, wo möglich" />
+    <MESSAGE value="Anpassen an REST-API von Spring 2.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Anpassen an REST-API von Spring 2.1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
