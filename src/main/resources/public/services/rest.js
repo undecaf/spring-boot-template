@@ -48,9 +48,11 @@ app.service("RestService", function ($mdToast, $http, $log, Seite) {
 
                 } else {
                     // Letzte vorhandene Seite ausliefern
+                    params.page = response.data.page.totalPages-1;
+
                     return this.seiteLaden(
                         konstruktor,
-                        response.data.page.totalPages-1,
+                        null,
                         params,
                         query);
                 }

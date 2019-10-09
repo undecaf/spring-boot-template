@@ -6,7 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09e9b735-16ac-4ca8-918b-e4fd1f6d6c3c" name="Default" comment="Server: OAuth2-Provider 'azure' (mit OpenID) hinzufügen" />
+    <list default="true" id="09e9b735-16ac-4ca8-918b-e4fd1f6d6c3c" name="Default" comment="Verwendet autoconfig v2.8.0: vordefinierte AAD-Provider">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1066,7 +1068,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Zusätzliche Treiber und Konfigurationsvorlagen für PostgreSQL, MS SQL Server, MariaDB und MySQL." />
     <MESSAGE value="Client: REST-Service kann Queries abfragen und einzelne Entities laden." />
     <MESSAGE value="Server: Auditing auch für OAuth2-Benutzer." />
     <MESSAGE value="Fix: doppelter Code in REST-Service entfernt." />
@@ -1091,7 +1092,8 @@
     <MESSAGE value="var durch let ersetzen, wo möglich" />
     <MESSAGE value="Anpassen an REST-API von Spring 2.1" />
     <MESSAGE value="Server: OAuth2-Provider 'azure' (mit OpenID) hinzufügen" />
-    <option name="LAST_COMMIT_MESSAGE" value="Server: OAuth2-Provider 'azure' (mit OpenID) hinzufügen" />
+    <MESSAGE value="Verwendet autoconfig v2.8.0: vordefinierte AAD-Provider" />
+    <option name="LAST_COMMIT_MESSAGE" value="Verwendet autoconfig v2.8.0: vordefinierte AAD-Provider" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
