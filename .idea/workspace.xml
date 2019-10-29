@@ -6,7 +6,11 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09e9b735-16ac-4ca8-918b-e4fd1f6d6c3c" name="Default" comment="Fix: autoconfig v2.8.0 _wirklich_ verwenden" />
+    <list default="true" id="09e9b735-16ac-4ca8-918b-e4fd1f6d6c3c" name="Default" comment="Autoconfig -&gt; v2.8.1 (HTL3R-Benutzernamen via Microsoft-OAuth2)">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/app.js" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1066,7 +1070,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Fix: doppelter Code in REST-Service entfernt." />
     <MESSAGE value="Server: Defaultwert für Allowed-Origins, Version -&gt; &quot;2.3.0-RELEASE&quot;." />
     <MESSAGE value="Client: laufende Seitennummer als Seite-Instanzvariable." />
     <MESSAGE value="Client: Protokollierungsformat geändert." />
@@ -1091,7 +1094,8 @@
     <MESSAGE value="Verwendet autoconfig v2.8.0: vordefinierte AAD-Provider" />
     <MESSAGE value="Fix: Endlosschleife beim Laden einer nicht existenten Seite verhindern" />
     <MESSAGE value="Fix: autoconfig v2.8.0 _wirklich_ verwenden" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix: autoconfig v2.8.0 _wirklich_ verwenden" />
+    <MESSAGE value="Autoconfig -&gt; v2.8.1 (HTL3R-Benutzernamen via Microsoft-OAuth2)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Autoconfig -&gt; v2.8.1 (HTL3R-Benutzernamen via Microsoft-OAuth2)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
