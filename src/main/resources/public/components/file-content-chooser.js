@@ -60,14 +60,19 @@ app.controller("FileContentChooserController", function($element) {
 
 
     // Klicks an das input-Element weiterleiten
-    this.open = () => !this.ngDisabled && fileInput.click();
+    this.open = () => !this.ngDisabled && fileInput[0].click();
 
 
     // Auf Dateiauswahl reagieren
     fileInput.on("change", () => {
         let files = fileInput[0].files;
         if (files instanceof FileList) {
-            let promises = [];
+            // ng-model nur ändern, wenn tatsächlich eine Dateiauswahl erfolgt ist
+            if (!files.length) {
+                return;
+            }
+
+            var promises = [];
 
             // Für jede Datei ein Promise auf die Beendigung des Lesens erzeugen
             for (let i = 0; i < files.length; i++) {
