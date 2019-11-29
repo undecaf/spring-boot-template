@@ -6,10 +6,10 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09e9b735-16ac-4ca8-918b-e4fd1f6d6c3c" name="Default" comment="Autoconfig -&gt; v2.8.1 (HTL3R-Benutzernamen via Microsoft-OAuth2)">
+    <list default="true" id="09e9b735-16ac-4ca8-918b-e4fd1f6d6c3c" name="Default" comment="Client: Data-URIs für Bilder, Audio und Video zulassen">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/public/services/dialog.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/public/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/app.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -135,7 +135,7 @@
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533720651881" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="H2" />
     <property name="database.console.LAST_STATE" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/public/services" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="/usr/bin/node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="options.lastSelected" value="reference.settings.project.maven.runner" />
@@ -1070,8 +1070,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Server: Defaultwert für Allowed-Origins, Version -&gt; &quot;2.3.0-RELEASE&quot;." />
-    <MESSAGE value="Client: laufende Seitennummer als Seite-Instanzvariable." />
     <MESSAGE value="Client: Protokollierungsformat geändert." />
     <MESSAGE value="Server: Hilfsmethoden für bidirektionale Updates von 1:n-Beziehungen zwischen Entities." />
     <MESSAGE value="Autoconfig -&gt; v2.3.2 (CORS), Version =&gt; &quot;2.4.0-RELEASE&quot;." />
@@ -1095,7 +1093,9 @@
     <MESSAGE value="Fix: Endlosschleife beim Laden einer nicht existenten Seite verhindern" />
     <MESSAGE value="Fix: autoconfig v2.8.0 _wirklich_ verwenden" />
     <MESSAGE value="Autoconfig -&gt; v2.8.1 (HTL3R-Benutzernamen via Microsoft-OAuth2)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Autoconfig -&gt; v2.8.1 (HTL3R-Benutzernamen via Microsoft-OAuth2)" />
+    <MESSAGE value="Client: Data-URIs für Bilder, Audio und Video zulassen" />
+    <MESSAGE value="Fix: ng-model im &lt;file-content-chooser&gt; nur bei Datei*auswahl* ändern" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix: ng-model im &lt;file-content-chooser&gt; nur bei Datei*auswahl* ändern" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
