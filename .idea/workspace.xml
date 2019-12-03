@@ -6,10 +6,8 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09e9b735-16ac-4ca8-918b-e4fd1f6d6c3c" name="Default" comment="Client: Data-URIs für Bilder, Audio und Video zulassen">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/services/dialog.js" afterDir="false" />
+    <list default="true" id="09e9b735-16ac-4ca8-918b-e4fd1f6d6c3c" name="Default" comment="Client: Service, um eine Komponente als modalen Dialog darzustellen">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -149,27 +147,27 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="server" />
-      <recent name="at.rennweg.htl.sew" />
-      <recent name="htl3r" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources/META-INF" />
-      <recent name="$PROJECT_DIR$/src/main/resources/public/services" />
-      <recent name="$PROJECT_DIR$/src/main/resources/public/models" />
-      <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/src/main/java/server/models" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="server.controllers" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/config" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src/main/resources/public" />
       <recent name="$PROJECT_DIR$/src/main/java/config" />
       <recent name="$PROJECT_DIR$/src/main/java" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="server" />
+      <recent name="at.rennweg.htl.sew" />
+      <recent name="htl3r" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="server.controllers" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/public/services" />
+      <recent name="$PROJECT_DIR$/src/main/resources/META-INF" />
+      <recent name="$PROJECT_DIR$/src/main/resources/public/models" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/main/java/server/models" />
     </key>
   </component>
   <component name="RestClientSettings">
@@ -939,6 +937,12 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.Server">
+    <configuration default="true" type="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="&lt;template&gt;" type="TestNG" default="true" selected="false">
       <option name="MAIN_CLASS_NAME" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -954,12 +958,6 @@
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="Applet">
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -1070,7 +1068,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Client: Protokollierungsformat geändert." />
     <MESSAGE value="Server: Hilfsmethoden für bidirektionale Updates von 1:n-Beziehungen zwischen Entities." />
     <MESSAGE value="Autoconfig -&gt; v2.3.2 (CORS), Version =&gt; &quot;2.4.0-RELEASE&quot;." />
     <MESSAGE value="Server: Merkbarkeit der Persistent-Hilfsmethoden verbessert." />
@@ -1095,7 +1092,8 @@
     <MESSAGE value="Autoconfig -&gt; v2.8.1 (HTL3R-Benutzernamen via Microsoft-OAuth2)" />
     <MESSAGE value="Client: Data-URIs für Bilder, Audio und Video zulassen" />
     <MESSAGE value="Fix: ng-model im &lt;file-content-chooser&gt; nur bei Datei*auswahl* ändern" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix: ng-model im &lt;file-content-chooser&gt; nur bei Datei*auswahl* ändern" />
+    <MESSAGE value="Client: Service, um eine Komponente als modalen Dialog darzustellen" />
+    <option name="LAST_COMMIT_MESSAGE" value="Client: Service, um eine Komponente als modalen Dialog darzustellen" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
