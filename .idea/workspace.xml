@@ -9,7 +9,6 @@
     <list default="true" id="09e9b735-16ac-4ca8-918b-e4fd1f6d6c3c" name="Default" comment="Client: Service, um eine Komponente als modalen Dialog darzustellen">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -109,6 +108,11 @@
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
@@ -924,18 +928,6 @@
       </list>
     </option>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="RunManager" selected="Spring Boot.Server">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
@@ -1001,6 +993,18 @@
       <item itemvalue="Spring Boot.Server" />
       <item itemvalue="Spring Boot.Server mit Tuning" />
     </list>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration>$USER_HOME$/.subversion</configuration>
@@ -1094,6 +1098,20 @@
     <MESSAGE value="Fix: ng-model im &lt;file-content-chooser&gt; nur bei Datei*auswahl* ändern" />
     <MESSAGE value="Client: Service, um eine Komponente als modalen Dialog darzustellen" />
     <option name="LAST_COMMIT_MESSAGE" value="Client: Service, um eine Komponente als modalen Dialog darzustellen" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="368" y="153" width="864" height="598" key="CommitChangelistDialog2" timestamp="1575373523284">
+      <screen x="0" y="29" width="1600" height="842" />
+    </state>
+    <state x="368" y="153" width="864" height="598" key="CommitChangelistDialog2/0.29.1600.842@0.29.1600.842" timestamp="1575373523284" />
+    <state x="95" y="129" width="1730" height="947" key="DiffContextDialog" timestamp="1575751072741">
+      <screen x="0" y="29" width="1920" height="1142" />
+    </state>
+    <state x="95" y="129" width="1730" height="947" key="DiffContextDialog/0.29.1920.1142@0.29.1920.1142" timestamp="1575751072741" />
+    <state x="395" y="188" width="810" height="527" key="Vcs.Push.Dialog.v2" timestamp="1575373539926">
+      <screen x="0" y="29" width="1600" height="842" />
+    </state>
+    <state x="395" y="188" width="810" height="527" key="Vcs.Push.Dialog.v2/0.29.1600.842@0.29.1600.842" timestamp="1575373539926" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
