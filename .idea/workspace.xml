@@ -6,8 +6,10 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09e9b735-16ac-4ca8-918b-e4fd1f6d6c3c" name="Default" comment="Client: Service, um eine Komponente als modalen Dialog darzustellen">
+    <list default="true" id="09e9b735-16ac-4ca8-918b-e4fd1f6d6c3c" name="Default" comment="Fix: in Seite-Factory berücksichtigen, dass _embedded-Objekte aufgelöst werden">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-vorlage.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-vorlage.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,6 +132,7 @@
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RequestMappingsPanelWidth2" value="15" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SearchEverywhereHistoryKey" value="reopen&#9;ACTION&#9;$LRU&#10;git&#9;ACTION&#9;Git.Init&#10;jdk&#9;ACTION&#9;SwitchBootJdk" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -1072,7 +1075,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Server: Hilfsmethoden für bidirektionale Updates von 1:n-Beziehungen zwischen Entities." />
     <MESSAGE value="Autoconfig -&gt; v2.3.2 (CORS), Version =&gt; &quot;2.4.0-RELEASE&quot;." />
     <MESSAGE value="Server: Merkbarkeit der Persistent-Hilfsmethoden verbessert." />
     <MESSAGE value="Server: Persistent-Hilfsmethoden optimiert für den Fall, dass keine Veränderung erfolgt." />
@@ -1097,21 +1099,24 @@
     <MESSAGE value="Client: Data-URIs für Bilder, Audio und Video zulassen" />
     <MESSAGE value="Fix: ng-model im &lt;file-content-chooser&gt; nur bei Datei*auswahl* ändern" />
     <MESSAGE value="Client: Service, um eine Komponente als modalen Dialog darzustellen" />
-    <option name="LAST_COMMIT_MESSAGE" value="Client: Service, um eine Komponente als modalen Dialog darzustellen" />
+    <MESSAGE value="Fix: in Seite-Factory berücksichtigen, dass _embedded-Objekte aufgelöst werden" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix: in Seite-Factory berücksichtigen, dass _embedded-Objekte aufgelöst werden" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="368" y="153" width="864" height="598" key="CommitChangelistDialog2" timestamp="1575373523284">
-      <screen x="0" y="29" width="1600" height="842" />
-    </state>
-    <state x="368" y="153" width="864" height="598" key="CommitChangelistDialog2/0.29.1600.842@0.29.1600.842" timestamp="1575373523284" />
-    <state x="95" y="129" width="1730" height="947" key="DiffContextDialog" timestamp="1575751072741">
+    <state x="442" y="197" width="864" height="598" key="CommitChangelistDialog2" timestamp="1575751223611">
       <screen x="0" y="29" width="1920" height="1142" />
     </state>
-    <state x="95" y="129" width="1730" height="947" key="DiffContextDialog/0.29.1920.1142@0.29.1920.1142" timestamp="1575751072741" />
-    <state x="395" y="188" width="810" height="527" key="Vcs.Push.Dialog.v2" timestamp="1575373539926">
-      <screen x="0" y="29" width="1600" height="842" />
+    <state x="368" y="153" width="864" height="598" key="CommitChangelistDialog2/0.29.1600.842@0.29.1600.842" timestamp="1575373523284" />
+    <state x="442" y="197" key="CommitChangelistDialog2/0.29.1920.1142@0.29.1920.1142" timestamp="1575751223611" />
+    <state x="95" y="129" width="1730" height="947" key="DiffContextDialog" timestamp="1578863591063">
+      <screen x="0" y="29" width="1920" height="1142" />
+    </state>
+    <state x="95" y="129" width="1730" height="947" key="DiffContextDialog/0.29.1920.1142@0.29.1920.1142" timestamp="1578863591063" />
+    <state x="474" y="245" width="810" height="527" key="Vcs.Push.Dialog.v2" timestamp="1575751259013">
+      <screen x="0" y="29" width="1920" height="1142" />
     </state>
     <state x="395" y="188" width="810" height="527" key="Vcs.Push.Dialog.v2/0.29.1600.842@0.29.1600.842" timestamp="1575373539926" />
+    <state x="474" y="245" width="810" height="527" key="Vcs.Push.Dialog.v2/0.29.1920.1142@0.29.1920.1142" timestamp="1575751259013" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

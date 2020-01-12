@@ -70,12 +70,13 @@ public class Persistent {
 
             // Wurde eine neue Collection von n-Entities angegeben?
             if (newCollection != null) {
-                // Alle neuen n-Entities hinzufügen
-                newCollection.forEach(e -> setEntity.accept(e, (O) this));
+                // Alle neuen n-Entities hinzufügen, ConcurrentModificationException vermeiden
+                List<M> copiedCollection = new ArrayList<>(newCollection);
+                copiedCollection.forEach(e -> setEntity.accept(e, (O) this));
             }
         }
 
-        return collection;
+        return newCollection;
     }
 
 
