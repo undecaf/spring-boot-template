@@ -77,8 +77,10 @@ app.service("RestService", function ($mdToast, $http, $log, Seite) {
         $log.debug("RestService.laden()", konstruktor.name, url, parameter);
 
         return $http
-            // Template aus dem URL entfernen
-            .get(url.replace(/\{.*\}$/, ""), { params: parameter })
+            .get(
+                // Template aus dem URL entfernen
+                ohneTemplate(url),
+                { params: parameter })
             .then(response => {
                 $log.debug("RestService.laden() OK", response);
 
@@ -100,7 +102,10 @@ app.service("RestService", function ($mdToast, $http, $log, Seite) {
         // Stammt die Entity vom Server, oder wurde sie lokal erzeugt?
         if (entity._links && entity._links.self) {
             return $http
-                .delete(entity._links.self.href, { headers: { "If-Match": entity.etag } })
+                .delete(
+                    // Template aus dem URL entfernen
+                    ohneTemplate(entity._links.self.href),
+                    { headers: { "If-Match": entity.etag } })
                 .catch(fehlerBehandeln);
 
         } else {
@@ -126,7 +131,8 @@ app.service("RestService", function ($mdToast, $http, $log, Seite) {
 
             return $http
                 .patch(
-                    entity._links.self.href,
+                    // Template aus dem URL entfernen
+                    ohneTemplate(entity._links.self.href),
                     entity,
                     { headers: { "If-Match": entity.etag } })
                 .then(response => {
@@ -152,6 +158,14 @@ app.service("RestService", function ($mdToast, $http, $log, Seite) {
                 .catch(fehlerBehandeln);
         }
     };
+
+
+    /**
+     * Liefert den URL ohne ein möglicherweise vorhandenes Template ("{...}").
+     */
+    function ohneTemplate(url) {
+        return url.replace(/\{.*\}$/, "");
+    }
 
 
     /**
