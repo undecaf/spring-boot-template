@@ -6,7 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09e9b735-16ac-4ca8-918b-e4fd1f6d6c3c" name="Default" comment="Patch-Level erhöhen">
+    <list default="true" id="09e9b735-16ac-4ca8-918b-e4fd1f6d6c3c" name="Default" comment="Autoconfig -&gt; v2.8.3 (Bugfix)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -1073,7 +1073,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Server: AspectJ &quot;Load time weaving&quot; statt Spring AOP verwenden." />
     <MESSAGE value="Server: Internen Java Instrumentation-Agent für LTW verwenden." />
     <MESSAGE value="Server: javax-Pakete nicht weaven, zurück zu OpenJDK." />
     <MESSAGE value="Dokumentation nachführen" />
@@ -1098,24 +1097,25 @@
     <MESSAGE value="Fix: in RestService: bei GET und DELETE können self-Links noch HAL-Templates enthalten" />
     <MESSAGE value="Autoconfig -&gt; v2.8.2 (Bugfixes)" />
     <MESSAGE value="Patch-Level erhöhen" />
-    <option name="LAST_COMMIT_MESSAGE" value="Patch-Level erhöhen" />
+    <MESSAGE value="Autoconfig -&gt; v2.8.3 (Bugfix)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Autoconfig -&gt; v2.8.3 (Bugfix)" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="442" y="197" width="861" height="598" key="CommitChangelistDialog2" timestamp="1580808559668">
+    <state x="442" y="197" width="861" height="598" key="CommitChangelistDialog2" timestamp="1580820975615">
       <screen x="0" y="29" width="1920" height="1142" />
     </state>
     <state x="368" y="153" width="864" height="598" key="CommitChangelistDialog2/0.29.1600.842@0.29.1600.842" timestamp="1580204499722" />
-    <state x="442" y="197" width="861" height="598" key="CommitChangelistDialog2/0.29.1920.1142@0.29.1920.1142" timestamp="1580808559668" />
+    <state x="442" y="197" width="861" height="598" key="CommitChangelistDialog2/0.29.1920.1142@0.29.1920.1142" timestamp="1580820975615" />
     <state x="95" y="129" width="1730" height="947" key="DiffContextDialog" timestamp="1580726135399">
       <screen x="0" y="29" width="1920" height="1142" />
     </state>
     <state x="79" y="103" width="1442" height="699" key="DiffContextDialog/0.29.1600.842@0.29.1600.842" timestamp="1580204464576" />
     <state x="95" y="129" width="1730" height="947" key="DiffContextDialog/0.29.1920.1142@0.29.1920.1142" timestamp="1580726135399" />
-    <state x="474" y="245" width="810" height="527" key="Vcs.Push.Dialog.v2" timestamp="1580808564876">
+    <state x="474" y="245" width="810" height="527" key="Vcs.Push.Dialog.v2" timestamp="1580820981914">
       <screen x="0" y="29" width="1920" height="1142" />
     </state>
     <state x="395" y="188" width="810" height="527" key="Vcs.Push.Dialog.v2/0.29.1600.842@0.29.1600.842" timestamp="1580204504809" />
-    <state x="474" y="245" width="810" height="527" key="Vcs.Push.Dialog.v2/0.29.1920.1142@0.29.1920.1142" timestamp="1580808564876" />
+    <state x="474" y="245" width="810" height="527" key="Vcs.Push.Dialog.v2/0.29.1920.1142@0.29.1920.1142" timestamp="1580820981914" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

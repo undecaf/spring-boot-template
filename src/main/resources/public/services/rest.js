@@ -78,8 +78,7 @@ app.service("RestService", function ($mdToast, $http, $log, Seite) {
 
         return $http
             .get(
-                // Template aus dem URL entfernen
-                ohneTemplate(url),
+                url,
                 { params: parameter })
             .then(response => {
                 $log.debug("RestService.laden() OK", response);
@@ -103,8 +102,7 @@ app.service("RestService", function ($mdToast, $http, $log, Seite) {
         if (entity._links && entity._links.self) {
             return $http
                 .delete(
-                    // Template aus dem URL entfernen
-                    ohneTemplate(entity._links.self.href),
+                    entity._links.self.href,
                     { headers: { "If-Match": entity.etag } })
                 .catch(fehlerBehandeln);
 
@@ -131,8 +129,7 @@ app.service("RestService", function ($mdToast, $http, $log, Seite) {
 
             return $http
                 .patch(
-                    // Template aus dem URL entfernen
-                    ohneTemplate(entity._links.self.href),
+                    entity._links.self.href,
                     entity,
                     { headers: { "If-Match": entity.etag } })
                 .then(response => {
@@ -158,14 +155,6 @@ app.service("RestService", function ($mdToast, $http, $log, Seite) {
                 .catch(fehlerBehandeln);
         }
     };
-
-
-    /**
-     * Liefert den URL ohne ein möglicherweise vorhandenes Template ("{...}").
-     */
-    function ohneTemplate(url) {
-        return url.replace(/\{.*\}$/, "");
-    }
 
 
     /**
@@ -234,4 +223,19 @@ app.service("RestService", function ($mdToast, $http, $log, Seite) {
         return entitiesVerlinken(angular.copy(requestData));
     });
 
+});
+
+
+/**
+ * Entfernt HATEOAS-Templates ("{...}") von allen Request-URLs.
+ */
+app.config(function($httpProvider) {
+    $httpProvider.interceptors.push(function() {
+        return {
+            "request": function(config) {
+                config.url = config.url.replace(/\{.*\}$/, "");
+                return config;
+            }
+        };
+    });
 });
