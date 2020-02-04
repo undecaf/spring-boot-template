@@ -6,12 +6,8 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09e9b735-16ac-4ca8-918b-e4fd1f6d6c3c" name="Default" comment="Client: HATEOAS-Templates aus allen Request-URLs entfernen">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/components/nachrichten.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/components/nachrichten.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/services/nachrichten.js" afterDir="false" />
+    <list default="true" id="09e9b735-16ac-4ca8-918b-e4fd1f6d6c3c" name="Default" comment="Client: Nachrichten-Komponente und -Service hinzufügen">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +138,7 @@
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533720651881" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="H2" />
     <property name="database.console.LAST_STATE" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/public/services" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/public/components" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="/usr/bin/node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="options.lastSelected" value="reference.settings.project.maven.runner" />
@@ -1077,7 +1073,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Server: javax-Pakete nicht weaven, zurück zu OpenJDK." />
     <MESSAGE value="Dokumentation nachführen" />
     <MESSAGE value="Verwendet autoconfig v2.6.0: load-time weaving erfolgt automatisch." />
     <MESSAGE value="Verwendet autoconfig v2.7.0: Spring Boot -&gt; v2.1.7, Versionsupdates der Abhängigkeiten." />
@@ -1102,14 +1097,15 @@
     <MESSAGE value="Patch-Level erhöhen" />
     <MESSAGE value="Autoconfig -&gt; v2.8.3 (Bugfix)" />
     <MESSAGE value="Client: HATEOAS-Templates aus allen Request-URLs entfernen" />
-    <option name="LAST_COMMIT_MESSAGE" value="Client: HATEOAS-Templates aus allen Request-URLs entfernen" />
+    <MESSAGE value="Client: Nachrichten-Komponente und -Service hinzufügen" />
+    <option name="LAST_COMMIT_MESSAGE" value="Client: Nachrichten-Komponente und -Service hinzufügen" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="442" y="197" width="861" height="598" key="CommitChangelistDialog2" timestamp="1580824258546">
+    <state x="442" y="197" width="861" height="598" key="CommitChangelistDialog2" timestamp="1580824637054">
       <screen x="0" y="29" width="1920" height="1142" />
     </state>
     <state x="368" y="153" width="864" height="598" key="CommitChangelistDialog2/0.29.1600.842@0.29.1600.842" timestamp="1580204499722" />
-    <state x="442" y="197" width="861" height="598" key="CommitChangelistDialog2/0.29.1920.1142@0.29.1920.1142" timestamp="1580824258546" />
+    <state x="442" y="197" width="861" height="598" key="CommitChangelistDialog2/0.29.1920.1142@0.29.1920.1142" timestamp="1580824637054" />
     <state x="95" y="129" width="1730" height="947" key="DiffContextDialog" timestamp="1580726135399">
       <screen x="0" y="29" width="1920" height="1142" />
     </state>
@@ -1119,11 +1115,11 @@
       <screen x="0" y="29" width="1920" height="1142" />
     </state>
     <state x="747" y="512" key="GitRewordDialog/0.29.1920.1142@0.29.1920.1142" timestamp="1580824310343" />
-    <state x="474" y="245" width="810" height="527" key="Vcs.Push.Dialog.v2" timestamp="1580824315381">
+    <state x="474" y="245" width="810" height="527" key="Vcs.Push.Dialog.v2" timestamp="1580824641396">
       <screen x="0" y="29" width="1920" height="1142" />
     </state>
     <state x="395" y="188" width="810" height="527" key="Vcs.Push.Dialog.v2/0.29.1600.842@0.29.1600.842" timestamp="1580204504809" />
-    <state x="474" y="245" width="810" height="527" key="Vcs.Push.Dialog.v2/0.29.1920.1142@0.29.1920.1142" timestamp="1580824315381" />
+    <state x="474" y="245" width="810" height="527" key="Vcs.Push.Dialog.v2/0.29.1920.1142@0.29.1920.1142" timestamp="1580824641396" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
