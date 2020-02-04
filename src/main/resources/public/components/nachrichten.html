@@ -1,0 +1,61 @@
+<!-- Siehe components/nachrichten.js -->
+
+<style>
+  nachrichten {
+    align-self: flex-end;
+  }
+
+  nachrichten md-list {
+    padding: 0;
+  }
+
+  nachrichten md-list-item {
+    margin: 10px;
+  }
+
+  /*
+   * Nachrichten animieren
+   */
+  nachrichten .nachrichten.ng-animate.ng-enter,
+  nachrichten .nachrichten.ng-animate.ng-leave {
+    -webkit-transition: 0.5s ease all;
+    -moz-transition: 0.5s ease all;
+    -ms-transition: 0.5s ease all;
+    -o-transition: 0.5s ease all;
+    transition: 0.5s ease all;
+  }
+
+  nachrichten .nachrichten.ng-animate.ng-enter.ng-enter-active,
+  nachrichten .nachrichten.ng-animate.ng-leave {
+    -webkit-transform: scaleY(1);
+    -moz-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    -o-transform: scaleY(1);
+    transform: scaleY(1);
+
+    opacity: 1;
+  }
+
+  nachrichten .nachrichten.ng-animate.ng-enter,
+  nachrichten .nachrichten.ng-animate.ng-leave.ng-leave-active {
+    -webkit-transform: scaleY(0);
+    -moz-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    -o-transform: scaleY(0);
+    transform: scaleY(0);
+
+    opacity: 0;
+  }
+</style>
+
+
+<md-list>
+  <md-list-item class="nachrichten md-whiteframe-5dp"
+                ng-repeat="nachricht in $ctrl.nachrichten.liste">
+    <md-icon md-font-icon="material-icons">{{ { erfolg: 'check_circle', info: 'info', warnung: 'warning', fehler: 'error' }[nachricht.typ] }}</md-icon>
+    <p ng-bind-html="nachricht.text"></p>
+    <md-button class="md-icon-button" ng-click="$ctrl.nachrichten.entfernen(nachricht)">
+      <md-icon md-font-icon="material-icons">close</md-icon>
+    </md-button>
+  </md-list-item>
+</md-list>
