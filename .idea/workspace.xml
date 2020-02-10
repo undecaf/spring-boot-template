@@ -6,7 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09e9b735-16ac-4ca8-918b-e4fd1f6d6c3c" name="Default" comment="Client: Nachrichten-Komponente und -Service hinzufügen">
+    <list default="true" id="09e9b735-16ac-4ca8-918b-e4fd1f6d6c3c" name="Default" comment="Client: Suchfeld-Komponente hinzufügen">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -152,27 +152,27 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="server" />
-      <recent name="at.rennweg.htl.sew" />
-      <recent name="htl3r" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources/public/services" />
-      <recent name="$PROJECT_DIR$/src/main/resources/public/components" />
-      <recent name="$PROJECT_DIR$/src/main/resources/META-INF" />
-      <recent name="$PROJECT_DIR$/src/main/resources/public/models" />
-      <recent name="$PROJECT_DIR$/src" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="server.controllers" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/config" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src/main/resources/public" />
       <recent name="$PROJECT_DIR$/src/main/java/config" />
       <recent name="$PROJECT_DIR$/src/main/java" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="server" />
+      <recent name="at.rennweg.htl.sew" />
+      <recent name="htl3r" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="server.controllers" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/public/components" />
+      <recent name="$PROJECT_DIR$/src/main/resources/public/services" />
+      <recent name="$PROJECT_DIR$/src/main/resources/META-INF" />
+      <recent name="$PROJECT_DIR$/src/main/resources/public/models" />
+      <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
   <component name="RestClientSettings">
@@ -1073,7 +1073,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Dokumentation nachführen" />
     <MESSAGE value="Verwendet autoconfig v2.6.0: load-time weaving erfolgt automatisch." />
     <MESSAGE value="Verwendet autoconfig v2.7.0: Spring Boot -&gt; v2.1.7, Versionsupdates der Abhängigkeiten." />
     <MESSAGE value="Verwendet autoconfig v2.7.1: Deprecations auflösen, ProjectionFactory für Controller" />
@@ -1098,14 +1097,15 @@
     <MESSAGE value="Autoconfig -&gt; v2.8.3 (Bugfix)" />
     <MESSAGE value="Client: HATEOAS-Templates aus allen Request-URLs entfernen" />
     <MESSAGE value="Client: Nachrichten-Komponente und -Service hinzufügen" />
-    <option name="LAST_COMMIT_MESSAGE" value="Client: Nachrichten-Komponente und -Service hinzufügen" />
+    <MESSAGE value="Client: Suchfeld-Komponente hinzufügen" />
+    <option name="LAST_COMMIT_MESSAGE" value="Client: Suchfeld-Komponente hinzufügen" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="442" y="197" width="861" height="598" key="CommitChangelistDialog2" timestamp="1580824637054">
+    <state x="442" y="197" width="861" height="598" key="CommitChangelistDialog2" timestamp="1580837616368">
       <screen x="0" y="29" width="1920" height="1142" />
     </state>
     <state x="368" y="153" width="864" height="598" key="CommitChangelistDialog2/0.29.1600.842@0.29.1600.842" timestamp="1580204499722" />
-    <state x="442" y="197" width="861" height="598" key="CommitChangelistDialog2/0.29.1920.1142@0.29.1920.1142" timestamp="1580824637054" />
+    <state x="442" y="197" width="861" height="598" key="CommitChangelistDialog2/0.29.1920.1142@0.29.1920.1142" timestamp="1580837616368" />
     <state x="95" y="129" width="1730" height="947" key="DiffContextDialog" timestamp="1580726135399">
       <screen x="0" y="29" width="1920" height="1142" />
     </state>
@@ -1115,11 +1115,11 @@
       <screen x="0" y="29" width="1920" height="1142" />
     </state>
     <state x="747" y="512" key="GitRewordDialog/0.29.1920.1142@0.29.1920.1142" timestamp="1580824310343" />
-    <state x="474" y="245" width="810" height="527" key="Vcs.Push.Dialog.v2" timestamp="1580824641396">
+    <state x="474" y="245" width="810" height="527" key="Vcs.Push.Dialog.v2" timestamp="1580837620251">
       <screen x="0" y="29" width="1920" height="1142" />
     </state>
     <state x="395" y="188" width="810" height="527" key="Vcs.Push.Dialog.v2/0.29.1600.842@0.29.1600.842" timestamp="1580204504809" />
-    <state x="474" y="245" width="810" height="527" key="Vcs.Push.Dialog.v2/0.29.1920.1142@0.29.1920.1142" timestamp="1580824641396" />
+    <state x="474" y="245" width="810" height="527" key="Vcs.Push.Dialog.v2/0.29.1920.1142@0.29.1920.1142" timestamp="1580837620251" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

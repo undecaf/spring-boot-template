@@ -170,22 +170,35 @@ app.service("RestService", function ($mdToast, $http, $log, Seite) {
 
 
     /**
-     * Ersetzt in den Response-Daten rekursiv alle _embedded-Objekte durch ihre Inhalte.
+     * Ersetzt in den Response-Daten rekursiv alle _embedded-Objekte durch ihre Inhalte
+     * und entfernt HATEOAS-Templates ("{...}") von allen _links.
      */
     function embeddedAufloesen(obj) {
-        let embedded;
-
         if (angular.isArray(obj)) {
             // Arrayelemente umstrukturieren
             obj.forEach(embeddedAufloesen);
 
-        } else if (angular.isObject(obj) && (embedded = obj._embedded)) {
-            // Inhalte von _embedded in diesem Objekt platzieren
-            Object.keys(embedded).forEach(k => {
-                obj[k] = embedded[k];
-                embeddedAufloesen(obj[k]);
-            });
-            delete obj._embedded;
+        } else if (angular.isObject(obj)) {
+            if (obj._embedded) {
+                // Inhalte von _embedded in diesem Objekt platzieren
+                let embedded = obj._embedded;
+
+                Object.keys(embedded).forEach(k => {
+                    obj[k] = embedded[k];
+                    embeddedAufloesen(obj[k]);
+                });
+
+                delete obj._embedded;
+
+            } else if (obj.href && obj.templated) {
+                // HATEOAS-Template von diesem Link entfernen
+                obj.href = obj.href.replace(/\{.*\}$/, "");
+                delete obj.templated;
+
+            } else {
+                // Properties dieses Objekts abarbeiten
+                Object.keys(obj).forEach(k => embeddedAufloesen(obj[k]));
+            }
         }
 
         return obj;
@@ -223,19 +236,4 @@ app.service("RestService", function ($mdToast, $http, $log, Seite) {
         return entitiesVerlinken(angular.copy(requestData));
     });
 
-});
-
-
-/**
- * Entfernt HATEOAS-Templates ("{...}") von allen Request-URLs.
- */
-app.config(function($httpProvider) {
-    $httpProvider.interceptors.push(function() {
-        return {
-            "request": function(config) {
-                config.url = config.url.replace(/\{.*\}$/, "");
-                return config;
-            }
-        };
-    });
 });
