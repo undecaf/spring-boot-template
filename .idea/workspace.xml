@@ -6,7 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09e9b735-16ac-4ca8-918b-e4fd1f6d6c3c" name="Default" comment="Server: REST-API-Schreibzugriff auf UserInfo.password nicht generell verhindern">
+    <list default="true" id="09e9b735-16ac-4ca8-918b-e4fd1f6d6c3c" name="Default" comment="Fix: kein CORS auf /login und /logout">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -1062,7 +1062,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Verwendet autoconfig v2.7.1: Deprecations auflösen, ProjectionFactory für Controller" />
     <MESSAGE value="Client: var durch let ersetzen, wo möglich." />
     <MESSAGE value="var durch let ersetzen, wo möglich" />
     <MESSAGE value="Anpassen an REST-API von Spring 2.1" />
@@ -1087,14 +1086,15 @@
     <MESSAGE value="Client: Suchfeld-Komponente hinzufügen" />
     <MESSAGE value="Client: HATEOAS-Templates beim Laden aus allen _links entfernen" />
     <MESSAGE value="Server: REST-API-Schreibzugriff auf UserInfo.password nicht generell verhindern" />
-    <option name="LAST_COMMIT_MESSAGE" value="Server: REST-API-Schreibzugriff auf UserInfo.password nicht generell verhindern" />
+    <MESSAGE value="Fix: kein CORS auf /login und /logout" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix: kein CORS auf /login und /logout" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="442" y="197" width="861" height="598" key="CommitChangelistDialog2" timestamp="1581449599454">
+    <state x="442" y="197" width="861" height="598" key="CommitChangelistDialog2" timestamp="1581454008069">
       <screen x="0" y="29" width="1920" height="1142" />
     </state>
     <state x="368" y="153" width="864" height="598" key="CommitChangelistDialog2/0.29.1600.842@0.29.1600.842" timestamp="1580204499722" />
-    <state x="442" y="197" width="861" height="598" key="CommitChangelistDialog2/0.29.1920.1142@0.29.1920.1142" timestamp="1581449599454" />
+    <state x="442" y="197" width="861" height="598" key="CommitChangelistDialog2/0.29.1920.1142@0.29.1920.1142" timestamp="1581454008069" />
     <state x="95" y="129" width="1730" height="947" key="DiffContextDialog" timestamp="1580726135399">
       <screen x="0" y="29" width="1920" height="1142" />
     </state>
@@ -1104,11 +1104,11 @@
       <screen x="0" y="29" width="1920" height="1142" />
     </state>
     <state x="747" y="512" key="GitRewordDialog/0.29.1920.1142@0.29.1920.1142" timestamp="1580824310343" />
-    <state x="474" y="245" width="810" height="527" key="Vcs.Push.Dialog.v2" timestamp="1581357384870">
+    <state x="474" y="245" width="810" height="527" key="Vcs.Push.Dialog.v2" timestamp="1581449617577">
       <screen x="0" y="29" width="1920" height="1142" />
     </state>
     <state x="395" y="188" width="810" height="527" key="Vcs.Push.Dialog.v2/0.29.1600.842@0.29.1600.842" timestamp="1580204504809" />
-    <state x="474" y="245" width="810" height="527" key="Vcs.Push.Dialog.v2/0.29.1920.1142@0.29.1920.1142" timestamp="1581357384870" />
+    <state x="474" y="245" width="810" height="527" key="Vcs.Push.Dialog.v2/0.29.1920.1142@0.29.1920.1142" timestamp="1581449617577" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
