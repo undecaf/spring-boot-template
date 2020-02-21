@@ -1,0 +1,15 @@
+<style>
+    sort-button .md-button.md-icon-button {
+        margin: 0;
+        padding: 0;
+    }
+</style>
+
+
+<div>
+    <md-button class="md-icon-button" ng-click="$ctrl.nextState()">
+        <md-icon md-font-icon="material-icons">
+            {{ $ctrl.icons[$ctrl.state] }}
+        </md-icon>
+    </md-button>
+</div>
