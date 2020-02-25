@@ -26,25 +26,27 @@ app.service("AuthService", function($http, $cookies, $log) {
 
     /**
      * Setzt die Authentifizierungsdaten für einen Benutzer oder löscht sie,
-     * wenn kein Argumente angegeben sind.
+     * wenn kein Argumente angegeben sind. Ist ein Konstruktor angegeben, so
+     + wird dieser zuvor auf das Benutzer-Objekt angewendet.
      */
-    let authentifizieren = (user_, token) => {
-        user = user_;
+    let authentifizieren = (user_, token, konstruktor) => {
+        user = konstruktor ? new konstruktor(user_) : user_;
         $http.defaults.headers.common[TOKEN_HEADER] = token;
     };
 
 
     /**
      * Versucht den angegebenen Benutzer am Server anzumelden und liefert
-     * ein Promise auf das Response-Objekt.
+     * ein Promise auf das Response-Objekt. Ist ein Konstruktor angegeben,
+     + wird dieser verwendet, um das Benutzer-Objekt zu erzeugen.
      */
-    this.login = (username, password) => {
+    this.login = (username, password, konstruktor) => {
         return $http
             .post(LOGIN, {}, { params: { username: username, password: password } })
             .then(response => {
                 $log.debug(`AuthService.login("${username}"): OK`, response.data, response.headers(TOKEN_HEADER));
 
-                authentifizieren(response.data, response.headers(TOKEN_HEADER));
+                authentifizieren(response.data, response.headers(TOKEN_HEADER), konstruktor);
                 return Promise.resolve(response);
             })
             .catch(response => {
