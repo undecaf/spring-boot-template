@@ -8,7 +8,7 @@
 	<packaging>jar</packaging>
 
 	<name>Vorlage</name>
-	<description>Spring Boot-Projektvorlage SEW MEDT 2019/20</description>
+	<description>Spring Boot-Projektvorlage SEW MEDT 2020/21</description>
 
 	<parent>
 		<groupId>at.rennweg.htl</groupId>
