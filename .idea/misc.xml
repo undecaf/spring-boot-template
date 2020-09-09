@@ -3,10 +3,6 @@
   <component name="JavaScriptSettings">
     <option name="languageLevel" value="ES6" />
   </component>
-  <component name="Kotlin2JsCompilerArguments">
-    <option name="sourceMapPrefix" value="" />
-    <option name="sourceMapEmbedSources" value="inlining" />
-  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
