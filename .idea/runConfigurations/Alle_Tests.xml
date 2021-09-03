@@ -5,7 +5,7 @@
     <option name="MAIN_CLASS_NAME" value="" />
     <option name="METHOD_NAME" value="" />
     <option name="TEST_OBJECT" value="package" />
-    <option name="VM_PARAMETERS" value="-ea --add-opens java.base/java.lang=ALL-UNNAMED -Duser.language=en" />
+    <option name="VM_PARAMETERS" value="-ea --add-opens java.base/java.lang=ALL-UNNAMED" />
     <envs>
       <env name="INTEGRATION_TESTS" value="true" />
     </envs>

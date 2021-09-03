@@ -22,6 +22,11 @@
       <option name="url" value="http://repo1.maven.org/maven2/" />
     </remote-repository>
     <remote-repository>
+      <option name="id" value="invesdwin-oss-remote" />
+      <option name="name" value="invesdwin-oss-remote" />
+      <option name="url" value="https://invesdwin.de/repo/invesdwin-oss-remote" />
+    </remote-repository>
+    <remote-repository>
       <option name="id" value="central" />
       <option name="name" value="Maven Central repository" />
       <option name="url" value="https://repo1.maven.org/maven2" />
