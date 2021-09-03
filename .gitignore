@@ -1,5 +1,6 @@
 /.mvn
 /db
 /target
-workspace.xml
-!.idea/fileTemplates
+/.idea/*
+!/.idea/runConfigurations
+!/.idea/jarRepositories.xml
