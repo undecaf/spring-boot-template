@@ -4,3 +4,4 @@
 /.idea/*
 !/.idea/runConfigurations
 !/.idea/jarRepositories.xml
+/src/main/resources/public
