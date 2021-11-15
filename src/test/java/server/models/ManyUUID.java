@@ -30,4 +30,9 @@ public class ManyUUID extends PersistentUUID {
         this.name = name;
     }
 
+
+    public void setOneUUID(OneUUID one) {
+        this.one = setManyToOne(this.one, one, OneUUID::getMany);
+    }
+
 }

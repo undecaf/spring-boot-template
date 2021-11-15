@@ -72,14 +72,14 @@ class RelatedTest {
         m1.setOne(m1.setManyToOne(m1.getOne(), null, One::getMany));
 
         assertEquals(0, o1a.getMany().size(), "collection not empty");
-        assertEquals(m1.getOne(), null, "1-entity still set");
+        assertNull(m1.getOne(), "1-entity still set");
     }
 
 
     @Test
     @Order(50)
     void setsCollectionOnManySide() {
-        o1a.setMany(o1a.setOneToMany(o1a.getMany(), new HashSet<Many>(Set.of(m1, m2)), Many::setOne));
+        o1a.setOneToMany(o1a.getMany(), new HashSet<Many>(Set.of(m1, m2)), Many::setOne);
 
         assertNotNull(o1a.getMany(), "collection is null");
         assertTrue(o1a.getMany().contains(m1), "n-entity missing from collection");
@@ -92,13 +92,13 @@ class RelatedTest {
     @Test
     @Order(60)
     void replacesCollectionOnManySide() {
-        o1a.setMany(o1a.setOneToMany(o1a.getMany(), new HashSet<Many>(Set.of(m1, m2)), Many::setOne));
-        o1a.setMany(o1a.setOneToMany(o1a.getMany(), new HashSet<>(), Many::setOne));
+        o1a.setOneToMany(o1a.getMany(), new HashSet<Many>(Set.of(m1, m2)), Many::setOne);
+        o1a.setOneToMany(o1a.getMany(), new HashSet<>(), Many::setOne);
 
         assertNotNull(o1a.getMany(), "collection is null");
         assertEquals(0, o1a.getMany().size(), "collection not empty");
-        assertEquals(m1.getOne(), null, "1-entity still set");
-        assertEquals(m2.getOne(), null, "1-entity still set");
+        assertNull(m1.getOne(), "1-entity still set");
+        assertNull(m2.getOne(), "1-entity still set");
     }
 
 }

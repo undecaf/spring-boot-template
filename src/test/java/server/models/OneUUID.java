@@ -33,4 +33,9 @@ public class OneUUID extends PersistentUUID {
         this.name = name;
     }
 
+
+    public void setMany(Collection<ManyUUID> many) {
+        setOneToMany(this.many, many, ManyUUID::setOne);
+    }
+
 }

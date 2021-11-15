@@ -42,4 +42,9 @@ public class One extends Persistent {
         this.name = name;
     }
 
+
+    public void setMany(Collection<Many> many) {
+        setOneToMany(this.many, many, Many::setOne);
+    }
+
 }

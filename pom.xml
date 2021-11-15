@@ -7,7 +7,7 @@
 	<description>Spring Boot-Projektvorlage SEW MEDT 2021/22</description>
 
 	<artifactId>vorlage</artifactId>
-	<version>4.0.0-RELEASE</version>
+	<version>4.1.0-RELEASE</version>
 	<packaging>jar</packaging>
 
 	<parent>

@@ -75,7 +75,7 @@ public abstract class Related<ID extends Serializable> {
      *      {@link Collection} von n-Entities, die zugewiesen wurde
      */
     protected <O extends Related<ID>, M extends Related<ID>,C extends Collection<M>>
-    C setOneToMany(C many, C newMany, BiConsumer<M, O> setOne) {
+    void setOneToMany(C many, C newMany, BiConsumer<M, O> setOne) {
 
         // Soll überhaupt eine andere Collection zugewiesen werden?
         if (newMany != many) {
@@ -91,8 +91,6 @@ public abstract class Related<ID extends Serializable> {
                 new ArrayList<>(newMany).forEach(e -> setOne.accept(e, (O) this));
             }
         }
-
-        return newMany;
     }
 
 

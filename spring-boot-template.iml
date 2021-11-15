@@ -40,8 +40,8 @@
       <excludeFolder url="file://$MODULE_DIR$/client/dist" />
       <excludeFolder url="file://$MODULE_DIR$/client/dist_electron" />
       <excludeFolder url="file://$MODULE_DIR$/.idea/libraries" />
-      <excludeFolder url="file://$MODULE_DIR$/target" />
       <excludeFolder url="file://$MODULE_DIR$/src/main/resources/public" />
+      <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

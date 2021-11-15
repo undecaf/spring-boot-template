@@ -29,4 +29,9 @@ public class Many extends Persistent {
         this.name = name;
     }
 
+
+    public void setOne(One one) {
+        this.one = setManyToOne(this.one, one, One::getMany);
+    }
+
 }
