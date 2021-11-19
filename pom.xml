@@ -7,13 +7,13 @@
 	<description>Spring Boot-Projektvorlage SEW MEDT 2021/22</description>
 
 	<artifactId>vorlage</artifactId>
-	<version>4.1.1-RELEASE</version>
+	<version>4.2.0-RELEASE</version>
 	<packaging>jar</packaging>
 
 	<parent>
 		<groupId>at.rennweg.htl</groupId>
 		<artifactId>spring-boot</artifactId>
-		<version>3.1.4-RELEASE</version>
+		<version>3.2.0-RELEASE</version>
 		<relativePath/>
 	</parent>
 
@@ -27,10 +27,22 @@
 
 	<build>
 		<plugins>
-			<!-- Erzeugt ein direkt in Linux ausführbares JAR -->
+			<!-- "package" erzeugt ein direkt in Linux ausführbares JAR -->
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+
+			<!-- "jib:dockerBuild" erzeugt ein lokales Docker-Image -->
+			<plugin>
+				<groupId>com.google.cloud.tools</groupId>
+				<artifactId>jib-maven-plugin</artifactId>
+			</plugin>
+
+			<!-- "keytool:generateKeyPair" erzeugt ein neues Schlüsselpaar -->
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>keytool-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
 	</build>
