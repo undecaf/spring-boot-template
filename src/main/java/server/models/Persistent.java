@@ -13,7 +13,7 @@ public class Persistent extends Related<Long> {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    protected Long id;
+    private Long id;
 
     @Version
     private long version;

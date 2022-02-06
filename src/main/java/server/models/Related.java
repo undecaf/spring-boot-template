@@ -1,5 +1,7 @@
 package server.models;
 
+import lombok.SneakyThrows;
+import org.apache.commons.lang3.reflect.FieldUtils;
 import org.springframework.util.ObjectUtils;
 
 import javax.persistence.MappedSuperclass;
@@ -33,6 +35,10 @@ public abstract class Related<ID extends Serializable> {
      * Vergleicht Entities auf Basis ihrer {@link #getId() id}s.
      * Entities mit {@code null}-{@link #getId()} id}s gelten
      * als verschieden.
+     * <p/>
+     * Achtung: {@link #equals(Object) equals()} und {@link #hashCode()} basieren auf
+     * einem veränderbaren (mutable) Property. Das kann z.B. das Verhalten von {@link Set}s
+     * beeinflussen, die Entities enthalten, siehe {@link #setManyToOne(Related, Related, Function)}.
      */
     @Override
     public boolean equals(Object other) {
@@ -125,7 +131,15 @@ public abstract class Related<ID extends Serializable> {
             // Gibt es derzeit eine 1-Entity, und gibt es dort eine Collection von n-Entities?
             if ((one != null) && ((many = getMany.apply(one)) != null)) {
                 // Diese Entity von der bisherigen 1-Entity entfernen
-                many.remove(this);
+                if (!many.remove(this) && (getId() != null) && (many instanceof Set)) {
+                    // Diese Entity war möglicherweise nicht persistent (d.h. id == null), als sie zu
+                    // einem Set hinzugefügt wurde, könnte jetzt aber persistent sein (d.h. id != null).
+                    // id temporär auf null setzen und versuchen, die Entity zu entfernen
+                    ID id = getId();
+                    setId(null);
+                    many.remove(this);
+                    setId(id);
+                }
             }
 
             // Wurde eine neue 1-Entity angegeben, und besitzt diese eine Collection von n-Entities?
@@ -142,6 +156,12 @@ public abstract class Related<ID extends Serializable> {
         }
 
         return newOne;
+    }
+
+
+    @SneakyThrows
+    private void setId(ID id) {
+        FieldUtils.writeField(this, "id", id, true);
     }
 
 }

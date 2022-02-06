@@ -18,18 +18,17 @@ import static org.junit.jupiter.api.Assertions.*;
 @UnitTest
 class RelatedTest {
 
-    private One null1, null2, o1a, o1b;
-    private Many m1, m2, m3;
+    private One o1a, o1b;
+    private Many null1, null2, m1, m2;
 
     @BeforeEach
     void beforeEach() {
-        null1 = new One(null, "null");
-        null2 = new One(null, "null");
         o1a = new One(1L, "one-1a");
         o1b = new One(1L, "one-1b");
+        null1 = new Many(null, "null");
+        null2 = new Many(null, "null");
         m1 = new Many(1L, "many-1");
         m2 = new Many(2L, "many-2");
-        m3 = new Many(3L, "many-3");
     }
 
     @Test
@@ -57,29 +56,61 @@ class RelatedTest {
     @Test
     @Order(40)
     void addsManyEntityToOneSide() {
-        m1.setOne(m1.setManyToOne(m1.getOne(), o1a, One::getMany));
+        m1.setOne(o1a);
 
-        assertEquals(1, o1a.getMany().size(), "collection is empty");
+        assertEquals(1, o1a.getMany().size(), "collection has wrong size");
         assertTrue(o1a.getMany().contains(m1), "n-entity missing from collection");
         assertEquals(m1.getOne(), o1a, "1-entity not set");
     }
 
 
     @Test
+    @Order(45)
+    void addsManyEntityWithNullIdToOneSide() {
+        null1.setOne(o1a);
+
+        assertEquals(1, o1a.getMany().size(), "collection has wrong size");
+        assertTrue(o1a.getMany().contains(null1), "n-entity missing from collection");
+        assertEquals(null1.getOne(), o1a, "1-entity not set");
+    }
+
+
+    @Test
     @Order(50)
     void removesManyEntityFromOneSide() {
-        m1.setOne(m1.setManyToOne(m1.getOne(), o1a, One::getMany));
-        m1.setOne(m1.setManyToOne(m1.getOne(), null, One::getMany));
+        m1.setOne(o1a);
+        m1.setOne(null);
 
         assertEquals(0, o1a.getMany().size(), "collection not empty");
         assertNull(m1.getOne(), "1-entity still set");
     }
 
 
+    /**
+     * This situation may occur in the course of a Hibernate session
+     * if a detached many-entity is persisted *after* it was added to
+     * a one-entity.
+     */
     @Test
-    @Order(50)
+    @Order(60)
+    void removesManyEntityFromOneSideIfManyIdInitiallyNull() {
+        null1.setOne(o1a);
+        Long id = 42L;
+        null1.setId(id);
+        assertFalse(o1a.getMany().contains(null1), "modified n-entity still found in collection");
+
+        null1.setOne(null);
+
+        assertEquals(0, o1a.getMany().size(), "collection not empty");
+        assertNull(null1.getOne(), "1-entity still set");
+        assertEquals(null1.getId(), id);
+    }
+
+
+    @Test
+    @Order(70)
     void setsCollectionOnManySide() {
-        o1a.setOneToMany(o1a.getMany(), new HashSet<Many>(Set.of(m1, m2)), Many::setOne);
+        o1a.setMany(new HashSet<>(Set.of(m1, m2)));
 
         assertNotNull(o1a.getMany(), "collection is null");
         assertTrue(o1a.getMany().contains(m1), "n-entity missing from collection");
@@ -90,10 +121,10 @@ class RelatedTest {
 
 
     @Test
-    @Order(60)
+    @Order(80)
     void replacesCollectionOnManySide() {
-        o1a.setOneToMany(o1a.getMany(), new HashSet<Many>(Set.of(m1, m2)), Many::setOne);
-        o1a.setOneToMany(o1a.getMany(), new HashSet<>(), Many::setOne);
+        o1a.setMany(new HashSet<>(Set.of(m1, m2)));
+        o1a.setMany(new HashSet<>());
 
         assertNotNull(o1a.getMany(), "collection is null");
         assertEquals(0, o1a.getMany().size(), "collection not empty");
