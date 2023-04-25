@@ -1,3 +1,5 @@
+## :warning: Dieses Projekt wird nicht mehr gewartet
+
 # Client-/Server-Projektvorlage mit Spring Boot und Vue.js
 
 Dieses Repository ist dafür gedacht, in einem IntelliJ-Projekt geklont zu werden.
