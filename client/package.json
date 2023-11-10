@@ -39,7 +39,7 @@
     "@undecaf/vue-hotkey": "^0.1.6",
     "@undecaf/vue-material-locales": "^0.2.1",
     "@undecaf/vue-material-vuelidate": "^0.3.1",
-    "axios": "^0.24.0",
+    "axios": "^1.6.0",
     "core-js": "^3.16.4",
     "date-fns": "^2.23.0",
     "material-icons-font": "^2.1.0",
