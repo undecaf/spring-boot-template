@@ -1,4 +1,4 @@
-## :warning: Dieses Projekt wird nicht mehr gewartet
+## :warning: This repository is no longer being maintained and has been archived.
 
 # Client-/Server-Projektvorlage mit Spring Boot und Vue.js
 
